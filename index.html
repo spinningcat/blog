@@ -1396,47 +1396,46 @@
             </p>
             <p>Let's examine unitys with examples. I will share an example for every unit. I will use 
                 <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle"><b class=bold>GetComputedStyle()</b></a>method to show those units in real example.
-            Also possible to find the support of those units in browsers. You can check the support of html elements
+            Also possible to find the support table of those units in browsers. You can check the support of html elements
         from <a href="https://caniuse.com/"><b class="bold">Can I Use? It is compatibility check for browser.</b></a> </p>
             <p><b class="bold">%</b></p>
             <ul>
                     <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/9/embedded/result/"><b class="bold">% unit</b></a></li>
                         <li> As you see subcontainer just get the 80% space of container.</li>
-                            <li><b class="bold">Additional Note: If you want a box of different sized text to scale nicely in a responsive matter you'll want to use em.</b></li>  
+                           
             </ul>
             <p><b class="bold">ch</b></p>
             <ul>
-                    <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/13/embedded/result"><b class="bold">% unit</b></a></li>
+                    <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/13/embedded/result"><b class="bold">ch unit</b></a></li>
                     <li> CH would be the most useful to guess how many characters wide some text is, but that only (sort of kind of) works if the font-family is monospace.</li>
                                        
 
                 </ul>
                 <p><b class="bold">rem</b></p>
                 <ul>
-                        <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/12/embedded/result"><b class="bold">% unit</b></a></li>
+                        <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/18/embedded/result"><b class="bold">rem unit</b></a></li>
                         <li> rem = html element's font-size. IF the user increases or decreases their font-size at the OS or browser level it increases the size of everything. </li>
                  </ul>
+                 <p><b class="bold">em</b></p>
+                 <ul>
+                         <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/12/embedded/result"><b class="bold">em unit</b></a></li>
+                         <li> If you want a box of different sized text to scale nicely in a responsive matter you'll want to use em. </li>
+                  </ul>
                  <p><b class="bold">vw</b></p>
                  <ul>
-                         <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/16/embedded/result"><b class="bold">% unit</b></a></li>
+                         <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/16/embedded/result"><b class="bold">vw unit</b></a></li>
                          <li> In this example subContainer takes 20% space of container. So 1vw is like 1% width of container.</li>
                                             
      
                      </ul>
                      <p><b class="bold">vh</b></p>
                      <ul>
-                             <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/15/embedded/result"><b class="bold">% unit</b></a></li>
+                             <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/15/embedded/result"><b class="bold">vh unit</b></a></li>
                              <li> In this example subContainer takes 20% space of container. So 1vh is like 1% width of container.</li>
                                                 
          
                          </ul>
-                         <p><b class="bold">vh</b></p>
-                         <ul>
-                                 <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/15/embedded/result"><b class="bold">% unit</b></a></li>
-                                 <li> In this example subContainer takes 20% space of container. So 1vh is like 1% width of container.</li>
-                                                    
-             
-                             </ul>
+    
                  <p>Genetal Notes</p>
                  <ul>
                      <li>
@@ -1452,7 +1451,8 @@
                                     rem is relative ems to the main font size, em will be relative to it's parent.
                             </li>
                      <li>
-                         Rrem is relative ems to the main font size, em will be relative to it's parent.
+                         Rr
+                         Rem is relative ems to the main font size, em will be relative to it's parent.
                          </li>           
 
                  </ul>
