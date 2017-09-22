@@ -1459,6 +1459,138 @@
                  <p>Additional content will be added soon.</p>
                 </div>
                 </div>
+                <div class="subContainer">
+                    <ul>
+                        <li class="expandnarrow" id="18"><span></span> </li>
+                    </ul>
+                    <div class="blogDiv">
+                        <p><span class="firstcharacter">H</span>ello everyone, in that article, i tend to dive into backend stuff little bit, so i 
+                            will get some help from PHP and try to introduce PHPMailer how handy it is. So content of this article consist of three parts as you easily pick up 
+                        ftom the title. I tend to make a list of them. </p>
+                        <ul>
+                            <li>Take a screen shot with Vanilla JavaScript <a href="https://html2canvas.hertzen.com/"><b class="bold">HTML2Canvas</b></a></li>
+                            <li>AJAX request with Vanilla Javascript  <a href="https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started"><b class="bold">MDN - Getting Started</b></a></li>
+                            <li>Send email with PHP  <a href="https://github.com/PHPMailer/PHPMailer"><b class="bold">PHPMailer</b></a></li>
+                        </ul>
+                        <p>I am debian jessie user. It is stable version of Debian. First we need to install LAMP server. For installing LAMP, you can follow
+                            <a href="https://wiki.debian.org/LaMp"><b class="bold">these steps</b></a>.
+                        </p>
+                        <p>Next thing you have to install composer so as to get latest version of PHPMailer.
+                        Here is the steps for installing composer. By the way <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-debian-8"><b class="bold">compose</b></a> is PHP package manager.</p>
+                        <p>HTML page is really simple just contains button and image.</p>
+                        <pre><code class="html">
+                                &lt;!doctype html>
+                                &lt;html&gt;
+                                &lt;head&gt;&lt;/head&gt;
+                                &lt;body&gt;
+                                &lt;p&gt;&lt;button class="click"&gt;Send Email&lt;/button&gt;&lt;/p&gt;
+                                &lt;img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Sample pic" /&gt;
+                                &lt;script src="https://code.jquery.com/jquery-3.1.1.min.js"&gt;&lt;/script&gt;
+                                &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js "&gt;&lt;/script&gt;
+                                &lt;script src="./script/calculation.js"&gt;&lt;/script&gt;
+                                &lt;/body&gt;
+                                &lt;html&gt;
+                                  
+                        </code></pre>
+                        <p>Javascript code seems a little complex but you will see what is going on with close look.
+                           We are just getting screenshot of div we want "container" div in this case and send that as 
+                           parameter to passittobackend function. Passittobackend function is just callback of click event. 
+                           Click event is just triggered when you click button that has "mail" class. In passittobackend 
+                           function we are doing ajax call.
+                        </p>
+                        <pre><code class = "javascript">
+                                // this is for taking screenshot.
+                                window.takeScreenShot = function() {
+                                  html2canvas(document.querySelector(".container"), {
+                                    onrendered: function(canvas) {
+                                      //document.body.appendChild(canvas);
+                                      passittobackend(canvas);
+                                    },
+                              
+                                  });
+                                }
+                                $('.mail').on('click', function() {
+                                   takeScreenShot();
+                                   
+                                });
+                                function passittobackend(str){
+                                 
+                                //    takeScreenShot();
+                                //	  var canvas = $('canvas');
+                                    $.ajax({
+                                    type: "POST",
+                                    url:"mail.php",
+                                    data: {"dataString" : str.toDataURL()},
+                                    dataType: 'json',
+                                    success: function(data){
+                                        alert("success");
+                                          console.log(data);
+                                        return data;
+                                    },
+                                    fail: function(){
+                                            alert("fail");
+                                    }
+                                });
+                                }
+                        </code></pre>
+                        <p>PHP part</p>
+                        <pre><code class="php">
+                                <?php
+                                
+                                header('Content-Type: application/json');
+                                $stringData = $_POST["dataString"];
+                                
+                                echo json_encode(array('key'=>$stringData));
+                                
+                                require_once "vendor/autoload.php";
+                                error_reporting(-1); 
+                                ini_set('display_errors', '1');
+                                
+                                use PHPMailer\PHPMailer\PHPMailer;
+                                
+                                
+                                    $var1 = substr($stringData, 22);
+                                    //$var2 = explode(',', $var1[0]);
+                                    $stringData = base64_decode($var1);
+                                    file_put_contents('/home/hellyeah/image1.png', $stringData);
+                                    
+                                $mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
+                                
+                                $mail->IsSMTP(); // telling the class to use SMTP
+                                
+                                
+                                
+                                try {
+                                      $mail->Host       = "mail.gmail.com"; // SMTP server
+                                      $mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
+                                      $mail->SMTPAuth   = true;                  // enable SMTP authentication
+                                      $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
+                                      $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
+                                      $mail->Port       = 465;   // set the SMTP port for the GMAIL server
+                                      $mail->SMTPKeepAlive = true;
+                                      $mail->Mailer = "smtp";
+                                      $mail->Username   = "...@gmail.com";  // GMAIL username
+                                      $mail->Password   = "...";            // GMAIL password
+                                      $mail->AddAddress('...@gmail.com', 'abc');
+                                      $mail->addAttachment('.../image1.png');
+                                      $mail->SetFrom('....@gmail.com', 'def');
+                                      $mail->Subject = 'Ek';
+                                      $mail->AltBody = ''; 
+                                      $mail->MsgHTML("Ek");
+                                      $mail->Send();
+                                      echo "Message Sent OK \n";
+                                      //header("location: ../test.html");
+                                } catch (phpmailerException $e) {
+                                      echo $e->errorMessage(); //Pretty error messages from PHPMailer
+                                } catch (Exception $e) {
+                                      echo $e->getMessage(); //Boring error messages from anything else!
+                                }
+                                
+                                
+                                ?>    
+                        </code></pre>
+                        </div>    
+                        </div>
 
 
     </div>
