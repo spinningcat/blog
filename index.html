@@ -1554,7 +1554,8 @@
                                     $stringData = base64_decode($var1);
                                     file_put_contents('/home/hellyeah/image1.png', $stringData);
                                     
-                                $mail = new PHPMailer(true); // the true param means it will throw exceptions on errors, which we need to catch
+                                $mail = new PHPMailer(true); 
+                                // the true param means it will throw exceptions on errors, which we need to catch
                                 
                                 $mail->IsSMTP(); // telling the class to use SMTP
                                 
