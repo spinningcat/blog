@@ -41,8 +41,13 @@
 
                         <div class="textContainer">
                             <p>
-                                <span class="firstcharacter">H</span>ello my name is Berat Emre Nebioğlu. I am an IT employee who tries to observe what is new on this market and share the knowledge to make people aware about those new techs. The reason for doing this, trying to keep people up to date, avoid them getting stuck in the marsh of outdated code and methodology. Also, we must be aware of what is going on in the world. That's the spirit <i class="fa fa-smile-o" aria-hidden="true"></i>. Hence, I am just an ordinary guy who try to follow those techs and learn it then share it. It is like "come on spread what you
-learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
+                                <span class="firstcharacter">H</span>ello my name is Berat Emre Nebioğlu. I am an IT employee
+                                who tries to observe what is new on this market and share the knowledge to make people aware
+                                about those new techs. The reason of doing this, trying to keep people up to date, avoid
+                                them getting stuck in the marsh of outdated code and methodology. Also we must be aware of
+                                what is going on in the world. That's the spirit :). Hence, I am just an ordinary guy who
+                                try to follow those techs and learn it than share it. It is like "come on spread what you
+                                learn to the world." :)
                             </p>
                         </div>
                     </div>
@@ -194,7 +199,12 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                         <div class="blogDiv">
 
                             <p> <span class="firstcharacter">T</span>o see the result you can check
-                                <a href="https://jsfiddle.net/" target="_blank"><b class="bold">jsfiddle.net</b></a>. o see the result you can check </p>
+                                <a href="https://jsfiddle.net/" target="_blank"><b class="bold">jsfiddle.net</b></a>. That
+                                is the place i will publish the code samples. You can create canvas element with 'canvas'
+                                tag. Then you should assign an id or class so as to work with it in Javascript. I just want
+                                to grab your attention here, you can select canvas element with jquery but you cannot do
+                                anything inside it. because it isn't elements. Therefore, javascript must be your choice
+                                anyway. Speaking of giving id or class to element, it can be done like that. </p>
                             <p>
      <pre><code class="canvas">
      &lt;canvas id="canvas"&gt; 
@@ -206,9 +216,9 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
 
 
 
-                                <p>Canvas is an HTML element so you have two options to design this HTML element. You can design
-                                    either with inline style or external. Creating separate .css file and set width,
-                                    height, background color in external .css file is always the best practice. We will style
+                                <p>Canvas is an html element so you have two options to design this html element. You can design
+                                    either with inline style or external. Creating seperate .css file and and set width,
+                                    height, background colour in external .css file is always best practice. We will style
                                     canvas element like below.</p>
                            
                                 <p><b class="bold"> External Styling </b> </p>
@@ -222,8 +232,8 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
 
 
                                 <p>
-                                    <b class="bold">Additional note:</b> In default canvas's width is 300px, canvas' height is 150px.
-                                    Default width and height.
+                                    <b class="bold">Additional note:</b> in default canvas's width is 300px, canvas' height
+                                    is 150px.
                                 </p>
                                 <ul>
                                     <li>
@@ -233,22 +243,23 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
 
                                 <div class="gap"></div>
                                 <p>
-                                    Functionality is important, to be honest. So we need javascript for that. Remember, don't use jquery, go for plain javascript.
+                                    Functionality is important to be honest. So we need javascript for that. Remember, don't use jquery, go for plain javascript.
                                     First of all we need to grab the dom object. Look at below;
                                 </p>
                                 <div class="gap"></div>
 
                                 <pre><code class="javascript">
-                                    var canvas = document.querySelector('#canvas'); 
-                                    /* Remember: We use "#" for id, "." for class.
-                                   This principle is same as selecting an element in CSS. */   
+                                     var canvas = document.querySelector('#canvas'); 
+                                     /* Remember: We use "#" for id, "." for class.
+                                    This principle is same as 
+                                    selecting element in css. */  
                                 </code></pre>
     
 
                                 <div class="gap"></div>
                                 <p>
-                                    Right now I am using var keywords. Keep it in your mind for future uses, in ES6, there is const keyword and that is new terminology for defining a variable. However, ES6 is not widely standardized amongst browser.
-                                    With that selection, you have dom API, also you need to have canvas API to use canvas functionality. In this point,
+                                    Right now i am using var keywords. Keep it in your mind for future uses, in ES6, there is const keyword and that is new terminology
+                                    for defining variable. However ES6 is not widely standardized amongst browser.
                                 </p>
                                 <div class="gap"></div>
                                 <p>
@@ -270,7 +281,8 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
 
 
                                 <p>
-                                    It is time to draw something with canvas. There are a lot of shapes are predefined in canvas API such as a rectangle, circle etc. Lets try <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect"
+                                    It is time to draw something with canvas. There are a lot of shapes are predefined in canvas API such as rectangle, circle
+                                    etc. Lets try <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillRect"
                                         target="_blank"><b class="bold">fillRect()</b></a>. FillRect has four parameters.
                                     <p>
                                         <div class="gap"></div>
@@ -286,12 +298,15 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                                         <div class="gap"></div>
                                         <p>
                                             <b class="bold"> Additional note:</b> You can give any number instead of canvas.width
-                                            or canvas.height also you can set in css part as we mentioned above.
+                                            or canvas.height also you can set in css part as we mentioned above. However
+                                            if your canvas.
                                         </p>
                                         <div class="gap"></div>
                                         <p>
                                             We can set the colors of canvas element with <a href="https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/fillStyle"
-                                                target="_blank"><b class="bold">fillStyle()</b></a>. Fillstyle method gives you some flexibility while setting color. You can set the colour with string, with rgb values, with rgba values, with hex value, with hsv values or with hsl values.
+                                                target="_blank"><b class="bold">fillStyle()</b></a>. Fillstyle method give you
+                                            some flexibility while setting colour. You can set colour with string, with rgb
+                                            values,with rgba values, with hex value, with hsv values or with hsl values.
                                         </p>
                                         <div class="gap"></div>
 
@@ -310,7 +325,8 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                                         </ul>
                                         <div class="gap"></div>
                                         <p>
-                                            <b class="bold">Warning:</b>You have to be careful about orders. If you call fillStyle after fillRect. fillStyle won't work.
+                                            <b class="bold">Warning:</b> You have to be careful about orders. If you call
+                                            fillStyle after fillRect. fillStyle wont work.
                                         </p>
                                         <div class="gap"></div>
                                         <p>
@@ -338,12 +354,15 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
 
                             <p>
                                 <span class="firstcharacter">F</span>lexbox is a way to lay out unknown and/or dynamically
-                                sized items in a container. Their size and position is just altered. Jsfiddle will be used to show how things work in flexbox. Keep in mind, in case of not supporting issue on a browser,
-                                it just rolls back display property to default one. Internet Explorer 9 and before probably will have problems with flexbox.
+                                sized items in a container. Their size and position is just altered. Jsfiddle will be used
+                                to show how things work in flexbox. Keep in mind, in case of not supporting issue on a browser,
+                                it just rolls back display property to default one. Internet Explorer 9 and before probably
+                                will have problems with flexbox.
                             </p>
                             <div class="gap"></div>
                             <p>
-                                The first thing you are gonna do is to set display type. So We get into details of flexbox in short time but first, we should set display as flexbox and observer what will happen afterwards. </p>
+                                First thing you are gonna to is to set display type. So We get into details of flexbox in short time but first we should
+                                set display as flexbox and observer what will happen afterwards. </p>
                             <ul>
                                 <li> <a href="https://developer.mozilla.org/tr/docs/Web/CSS/flex" target="_blank"><b class="bold">display: flex</b></a></li>
                                 <li><a href="https://jsfiddle.net/hellyeah/vu1kz9af/2/" target="_blank"><b class="bold">Before display:flex</b></a></li>
@@ -363,129 +382,75 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                             <p>
                                 You can play it around jsfiddle link below.. I put all options there for you. It is flex-direction:row by default</p>
                             <ul>
-                                <li class="expandnarrow" id="5"><span></span> </li>
+                                <li><a href="https://jsfiddle.net/hellyeah/vu1kz9af/4/" target="_blank"><b class="bold">Flex direction example</b></a></li>
                             </ul>
                             <div class="gap"></div>
                             <p>
                                 Next property is <a href="https://developer.mozilla.org/tr/docs/Web/CSS/flex-wrap" target="_blank"><b class="bold">flex-wrap</b></a>.
                                 It is flex-wrap: nowrap by default. Whatever you change the value of item's width in line
-                                16 of CSS panel. Element is just placed automatically after checking available space on parent div. Change the line 16 if you want.</p>
+                                16 of css panel. Element is just placed automatically after checking abailable space on parent
+                                div. Change the line 16 if you want.</p>
                             <ul>
-                                <li class="expandnarrow" id="6"><span></span> </li>
-                            </ul>
-                            <div class="blogDiv">
-                                <p>
-                                    <span class="firstcharacter">I</span> am about to talk about markdown syntax. Using markdown syntax is important for constructing clear-looking Readme.md file in your GitHub project. You can check an example here. It is made with <a href="https://github.com/spinningcat/Person-On-Duty/blob/master/README.md"
-                                        target="_blank"><b class="bold"> markdown syntax</b></a>. The reason of that, you can have good
-                                    looking document with just really simple syntax. Actually there is something more possible with
-                                    "pandoc" package you can covert your .md to .pdf easily.
-                                    <p>
-                                        <ul>
-                                            <li><a href="https://pandoc.org" target="_blank"><b class="bold">Pandoc</b></a></li>
-                                            <li> <a href="http://pandoc.org/installing.html" target="_blank"><b class="bold"> Windows, Linux and MAC OsX  installation available. -> Check the link </b></a></li>
-                                        </ul>
-                                        <p> While writing markdown, you have two alternatives that are mentioned below. </p>
-                                        <div class="gap"></div>
-                                        <ul>
-                                            <li> <a href="http://linuxg.net/how-to-install-haroopad-0-12-2-on-ubuntu-debian-and-derivative-systems/"
-                                                    target="_blank"><b class="bold">Haroopad</b></a></li>
-                                            <li><a href="http://dillinger.io/" target="_blank"><b class="bold">Online Markdown Editor</b></a>                                        </li>
-                                        </ul>
-                                        <p>Question is what can you do with md? Well a lot of things. I will show you some tricks. You
-                                            have options like #, ##, ###, ####, #####, ###### which are h1, h2, h3, h4, h5 and h6
-                                            in html respectively.</p>
-                                        <div class="gap"></div>
-        
-                                        <p> You can make your text emphasis, italics, bold or whatever with *,**,_,__ or you can combine
-                                            them in a semantic way.</p>
-        
-                                        <ul>
-                                            <li> *asterisks*</li>
-        
-                                            <li>**asterisks** </li>
-        
-                                            <li>_underscores_</li>
-        
-                                            <li>__underscores__ </li>
-        
-                                            <li>*asterisks and _underscores_*</li>
-        
-                                            <li>**asterisks and _underscores_**</li>
-        
-                                            <li>**asterisks and __underscores__** </li>
-                                        </ul>
-                                        <div class="gap"></div>
-                                        <p>
-                                            You can have ordered or unordered list in md syntax. It is really simple.
-                                        </p>
-                                        <ul>
-                                            <li>1. Ordered list item #1</li>
-                                            <li> 2. Ordered list item #2 </li>
-                                            <li>3. Ordered list item #3 </li>
-                                            <li> ⋅⋅1 Ordered sublist item 2 </li>
-                                            <li> 4. Ordered list item #4 </li>
-                                        </ul>
-                                        <div class="gap"></div>
-                                        <p>
-                                            Keep in mind that the number of the first item is really important. This version starts with 1, but there is a different number in the version on the link I've shared. For the ordered list you use a number for a unordered
-                                            list you use *. It is pretty similar to HTML right.
-                                        </p>
-                                        <ul>
-                                            <li> * Ordered list item #1</li>
-                                            <li> * Ordered list item #2 </li>
-                                            <li> ⋅⋅* Unordered list item #1</li>
-                                            <li> * Ordered list item #3 </li>
-                                            <li>⋅⋅1 Ordered sublist item 2 </li>
-                                            <li> * Ordered list item #4 </li>
-                                        </ul>
-                                        <div class="gap"></div>
-                                        <p> You can give URL in markdown with simple way -> [Google](https://www.google.com)</p>
-                                        <div
-                                            class="gap"></div>
-        
-                            <p> It is possible to put code here with below syntax.</p>
-                            <ul>
-                                <li>```javascript</li>
-                                <li> var s = "JavaScript syntax highlighting" </li>
-                                <li> alert(s);</li>
-                                <li> ```</li>
+                                <li><a href="https://jsfiddle.net/hellyeah/vu1kz9af/8/" target="_blank"><b class="bold">flex-warp:nowrap</b></a>                                    With flex-wrap:wrap. It just replace the box by focusing on width of parent div.
+
+                                    <li> <a href="https://jsfiddle.net/hellyeah/vu1kz9af/15/" target="_blank"><b class="bold"> width of parent div is 300.</b></a>                                        </li>
+                                    <li><a href="https://jsfiddle.net/hellyeah/fq6hf3f6/15/" target="_blank"><b class="bold"> width of parent div is 600.</b></a></li>
+                                    <li><a href="https://jsfiddle.net/hellyeah/vu1kz9af/10/" target="_blank"><b class="bold"> flex-wrap: wrap-reverse is another option you have.</b></a></li>
                             </ul>
                             <div class="gap"></div>
                             <p>
-                                For next property, i set height to 200px. We will see what will happen. Next thing is
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content" target="_blank"><b class="bold">justify-content</b></a>                                is next for us. It is used for setting the place of box. It has five options. That are flex-start,
+                                flex-end, center, space-between and space around. justify:content: flex-start is default
+                                value. You can play it around and see the result of each value of that property. Link is
+                                below.</p>
+                            <ul>
+                                <li><a href="https://jsfiddle.net/hellyeah/vu1kz9af/11/" target="_blank"><b class="bold">jusftify-content example</b></a></li>
+                            </ul>
+                            <div class="gap"></div>
+                            <p>
+                                For next property, i set height too 200px. We will see what will happen. Next thing is
                                 <a
                                     href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items" target="_blank"><b class="bold">align-items</b></a>.
                             </p>
                             <p>Align items just handles the y axis. Default value of align-items is align-items:flex-start.
                                 You have for options here.</p>
                             <ul>
-                                <li> ```python </li>
-                                <li> s = "Python syntax highlighting" </li>
-                                <li> print s</li>
-                                <li> ```</li>
-                            </ul>
-                            <div class="gap"></div>
-        
-                            <p> You can construct a table in markdown it is like html's table with simple syntax shown below.</p>
-                            <ul>
-                                <li> sometihng | other thing | another thing </li>
-                                <li> ---| ---- | ---</li>
-                                <li> item #1 | item 2 | item3 </li>
-                                <li>text 1 | text 2 | text3 </li>
+                                <li> flex-start </li>
+                                <li> flex-end </li>
+                                <li> center </li>
+                                <li> strech </li>
+                                <li>In order to use align-items: strecth you need to remove height of items. Actually that make
+                                    sense when you think about it. Assigning height explicitly will avoid stretching.</li>
+                                <li><a href="https://jsfiddle.net/hellyeah/vu1kz9af/12/" target="_blank"><b class="bold">align-items:center</b></a>                                    </li>
+                                <li><a href="https://jsfiddle.net/hellyeah/vu1kz9af/13/" target="_blank"><b class="bold">align-items:stretch</b></a>                                    </li>
                             </ul>
                             <div class="gap"></div>
                             <p>
-                                As mentioned above justify content handles x-axis whereas align-items handles y-axis. What if we change flex-direction:row
-                                to flex-direction-column. You can think the axis of the page will be different in that case.
+                                So justify-content and align-items are like brothers. The reason of saying that, justify-content handles x axis whereas align-items
+                                handles y axis. So they are doing same things for different axis.
+                            </p>
+                            <div class="gap"></div>
+                            <p>
+                                <a href="https://developer.mozilla.org/tr/docs/Web/CSS/align-content" target="_blank"><b class="bold">align-content</b></a>                                is next. align-content is for setting the position of all childs element in specified position.
+                                if you disable height of items and do align-items: strect you will see divs are expanded
+                                according to size of parent div. JS fiddle link:</p>
+                            <ul>
+                                <li><a href="https://jsfiddle.net/hellyeah/fq6hf3f6/3/" target="_blank"><b class="bold">options </b></a>                                    </li>
+                            </ul>
+                            <div class="gap"></div>
+                            <p>
+                                As mentioned above justify content handles x axis whereas align-items handles y axis. What if we change flex-direction:row
+                                to flex-direction-column. You can think the axis of page will be different in that case.
                                 When you do flex-direction: column. X will be y and y will be x respectively. see the example.</p>
                             <ul>
-                                <li> > The world has experience weird events currently.</li>
-                                <li> > The kid his name is Laren ipsum randomly read randomly created text so easily. This baby was 2
-                                    years uld.</li>
+                                <li> <a href="https://jsfiddle.net/hellyeah/fq6hf3f6/5/" target="_blank"><b class="bold">flex-direction:row</b></a>                                    </li>
+                                <li><a href="https://jsfiddle.net/hellyeah/fq6hf3f6/6/" target="_blank"><b class="bold">flex-direction:column</b></a></li>
+
                             </ul>
                             <div class="gap"></div>
                             <p>
-                                It is time to play with specific child element instead of changing the position of the whole block. The first thing we gonna do change the place of a specific child element. The thing we gonna use is</p>
+                                It is time to play with specific child element instead of changing the position of whole block. The first thing we gonna
+                                do changing the place of specific child element. The thing we gonna use is</p>
                             <ul>
                                 <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/order" target="_blank"><b class="bold">order property.</b></a></li>
                                 <li><a href="https://jsfiddle.net/hellyeah/fq6hf3f6/18/" target="_blank"><b class="bold"> First of all lets take a look at what we have now.</b></a></li>
@@ -494,25 +459,33 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
 
                             <div class="gap"></div>
                             <p>
-                                If you select more than one child and give it bigger value you see in the jsfiddle link. It puts all child according to a number
+                                If you select more than one child and give it bigger value you see in the jsfiddle link. It puts all child according to number
                                 you give as an order from bigger to smaller.
                             </p>
                             <ul>
-                                <Li> --- </Li>
-                                <Li> *** </Li>
-                                <Li> ___ </Li>
+                                <li><a href="https://jsfiddle.net/hellyeah/fq6hf3f6/17/" target="_blank"><b class="bold">Big Value</b></a></li>
                             </ul>
-                            <p> That is all for now you can get and play it around here.</p>
+                            <div class="gap"></div>
+                            <p>
+                                Next property is <a href="https://developer.mozilla.org/tr/docs/Web/CSS/flex-grow" target="_blank"><b class="bold">flex-grow</b></a>                                Default value of flex-grow is 0. When you set flex-grow such as flex-gor:1, you will see
+                                all childs element will be expanded with a spesific ratio. with same pixel.</p>
                             <ul>
-                                <li><a href="https://github.com/spinningcat/md-syntax/blob/master/README.md" target="_blank"><b class="bold">All in one</b></a></li>
+                                <li><a href="https://jsfiddle.net/hellyeah/fq6hf3f6/20/" target="_blank"> <b class="bold"> You can select direct child and grow that. You will see other boxes will be shrinked.</b></a></li>
                             </ul>
+                            <div class="gap"></div>
+
+
+                            <p>Adittional contents will be added</p>
+
                         </div>
                     </div>
                     <div class="subContainer">
                         <ul>
-                            <li class="expandnarrow" id="7"><span></span> </li>
+                            <li class="expandnarrow" id="4"><span></span> </li>
                         </ul>
                         <div class="blogDiv">
+
+
                             <p>
                                 <span class="firstcharacter">T</span>his is fukol lightweight, breakpoint free, element query
                                 driven, progressive enhancement based CSS grid framework. JS fiddle will be used to demonstrate
@@ -533,64 +506,42 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                             <div
                                 class="gap"></div>
                         <p>This should always be a negative version of 4. It compensates for the margins created by the items.
-                            It makes sure the outside of the .fukul-grid container remains to flush horizontally and no additional margin is added to the vertical flow. The class="fukul" container in the HTML snippet enables
-                            you to add positive margins around the grid — not possible with just .fukul-grid because this uses negative margins (see. It also suppresses horizontal scrolling issues which occur under
+                            It makes sure the outside of the .fukul-grid container remains flush horizontally and no additional
+                            margin is added to the vertical flow. The class="fukul" container in the HTML snippet enables
+                            you to add positive margins around the grid — not possible with just .fukul-grid because this
+                            uses negative margins (see . It also suppresses horizontal scrulling issues which occur under
                             certain circumstances.</p>
                         <ul>
-                            <li><a href="https://developer.mozilla.org/tr/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank"><b class="bold">typeOf()</b></a>                        </li>
-                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toString"
-                                    target="_blank"><b class="bold">ToString()</b></a> </li>
-                            <li><a href="https://jsfiddle.net/hellyeah/c9x9Lq6d/2/" target="_blank"><b class="bold">cast with ToString()</b></a>                        </li>
+                            <li><a href="https://github.com/Heydon/fukol-grids" target="_blank"><b class="bold">Project Page</b></a></li>
+                            <li> <a href="https://jsfiddle.net/pymuosau/" target="_blank"><b class="bold">Fukul example</b></a></li>
                         </ul>
-                        <div class="gap"></div>
-                        <b class="bold">ToNumber</b>
-                        <div class="gap"></div>
-                        <p>That converts value to number equivalence.</p>
-                        <ul>
-                            <li><a href="https://jsfiddle.net/hellyeah/Ly1tvu4k/1/" target="_blank"><b class="bold">casting to number</b></a>                        </li>
-                        </ul>
-                        <div class="gap"></div>
-                        <b class="bold">ToBoulean</b>
-                        <p>As we already knew, true and false and 1 and 0 is same thing. It is likely 0 means false, 1 means true. But
-                            this is not necessarily legitimate in Javascript. Because all non-zero numbers in javascript mean true.
-                            </p>
-                        <p>Additional note : ! is a convenient shorthand for converting a truthy /falsy value to true/false. Also you
-                            can define boolean variable with !.
-                            <ul>
-                                <li><a href="https://jsfiddle.net/hellyeah/w2r71zc2/2/" target="_blank"><b class="bold">boolean case</b></a>                            </li>
-                            </ul>
-        
-        
                     </div>
                 </div>
-        
-        
-        
-        
                 <div class="subContainer">
                     <ul>
-                        <li class="expandnarrow" id="8"><span></span> </li>
+                        <li class="expandnarrow" id="5"><span></span> </li>
                     </ul>
                     <div class="blogDiv">
                         <p>
                             <span class="firstcharacter">A</span>s i said before everything in a web page is modelled as
-                            a box. In this article, I just walk through real-world example. This example is complete page layout example. And here we will see how important it is to know how to replace box inside a container.
+                            a box. In this article, i just walk through real world example. This example is complete page
+                            layout example. And here we will see how important it is to know how to replace box inside container.
                             You can check calculate container's size article below to get more insight.
                         </p>
                         <div class="gap"></div>
-                        <p>It may come as surprise to see no tag there. For me, writing &lt;tag&gt;&lt;/tag&gt; each time is pain in
-                            the neck in some cases. Instead of tag, we have indentation rules. Only thing you should watch out is
-                            indentation. That is it. You are all set </p>
+                        <p> Flexbox have some features for changing the view. These are flex-direction, justify content and align-items.
+                            </p>
                         <div class="gap"></div>
                         <p>
                             Think about a dom structure. It is actually a tree. Simplest dom would be like container(root) -> subContainer(child) ->
-                            text(leaf). text is a leaf in this case because text element doesn't have a child. You can have more complicated dom structure for sure. Point is flex-direction, justify-content, align-items
-                            will state the place of subContainer. I put a border to each of container for debugging purpose.
+                            text(leaf). text is a leaf in this case because text element doesn't have a child. You can have
+                            more complicated dom structure for sure. Point is flex-direction, justify-content, align-items
+                            will state the place of subContainer. I put border to each of container for debugging purpose.
                             Hopefully it will be easier to understand for you with that borders.
                         </p>
                         <div class="gap"></div>
                         <p>If you check footer parts you will see what i did there with justify-content. As reminder justify-content
-                            handle x-axis and align-items handle y-axis.
+                            handle x axis and align-items handle y axis.
                             <p>
                                 <div class="gap"></div>
                                 <p> For selecting individual child in css, the line you are gonna use is .content .subContent
@@ -635,179 +586,16 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                                 </ul>
                     </div>
                 </div>
+
                 <div class="subContainer">
                     <ul>
-                        <li class="expandnarrow" id="9"><span></span> </li>
+                        <li class="expandnarrow" id="6"><span></span> </li>
                     </ul>
                     <div class="blogDiv">
-        
-                        <p><span class="firstcharacter">H</span>andlebars is template engine that is powerful, simple to use. It is
-                            based on <a href="https://mustache.github.io/" target="blank">Mustache template engine</a> .</p>
-                        <div
-                            class="gap"></div>
-                    <p>Main purpose of handlebars in my understanding is about generating same markup multiple times. You can build
-                        your page with javascript/jquery totally. There is no problem with that. Or you can use <a href="http://handlebarsjs.com/"
-                            target="_blank"><b class="bold"> handlebars </b></a>. Lets just look at simple example how we build a part
-                        of page with <b class="bold">handlebars</b>
-                    </p>
-        
-                    <div class="gap"></div>
-                    <p>Html panel in line 2 through line 24, we just surrounded html markup with script tag. This markup is not in the
-                        DOM yet. It is just a string. The purpose here about using handlebars, as you see in the result panel is to create same elements multiple times. So if you want to create some part of a page that may be repeated multiple times. You may just use</p>
-                    <ul>
-                        <li><a href="http://handlebarsjs.com/" target="_blank"><b class="bold">Handlebars
-                                template engine</b></a></li>
-                    </ul>
-                    <p>My aim is just to create buttons multiple times according to length of objcets. For that purpose, First thing
-                        i did is define an object that i wrote simple article above about object. </p>
-                    <div class="gap"></div>
-                    <p> In jquery panel, line 1 through line 26, you can find object definition. The method i used here for constructing
-                        dom is line 31 in </p>
-                    <ul>
-                        <li><a href="https://jsfiddle.net/hellyeah/2L004qvb/5/" target="_blank"><b class="bold">Simple handlebars example</b></a></li>
-                        <li>I will share the page here so you can get more informations about those method.</li>
-                    </ul>
-                    <ul>
-                        <li> <a href="http://api.jquery.com/html/" target="_blank"><b class="bold">html()  </b></a> </li>
-                        <li> <a href="http://api.jquery.com/jQuery.parseHTML/" target="_blank"><b class="bold">parseHTML()</b></a></li>
-                        <li> <a href="http://api.jquery.com/map/" target="_blank"><b class="bold">map()</b></a></li>
-                    </ul>
-        
-                    <p> Let's take a look at powerful features that is maintained by <a href="http://handlebarsjs.com/" target="_blank"><b class="bold">Handlebars
-                                  template engine</b></a> quiet nicely. </p>
-                    <div class="gap"></div>
-                    <p><b class="bold">  Adding handlebars template to your project </b></p>
-                    <div class="gap"></div>
-                    <p> In order to use handlebars you need to include that file. https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js
-                        </p>
-                    <p><b class="bold">  Templates </b></p>
-                    <div class="gap"></div>
-                    <p>As mentioned above, in order to use handlebars you need to cover your html markup android handlebars expression
-                        with script tag. This is another example that shows how to use it
-                    </p>
-                    <ul>
-                        <li> <a href="https://jsfiddle.net/hellyeah/cbajjj7m/" target="_blank"><b class="bold">Handlebars with template</b></a></li>
-                    </ul>
-                    <div class="gap"></div>
-                    <p> Actually we feed static content with a dynamic variable that we define in js. Let's do some quick touch What
-                        method we used here. </p>
-                    <ul>
-                        <li> <a href="http://api.jquery.com/html/" target="_blank"><b class="bold">html()</b>></a> </li>
-                        <li> <a href="http://handlebarsjs.com/reference.html" target="_blank"><b class="bold">Handlebars.compile(template , options)</b></a>                    </li>
-                    </ul>
-                    <div class="gap"></div>
-                    <p>You can try your handlebars here to see the result. </p>
-                    <ul>
-                        <li> <a href="http://tryhandlebarsjs.com/" target="_blank"><b class="bold">Try handlebars</b> </a></li>
-                    </ul>
-        
-                </div>
-            </div>
-            <div class="subContainer">
-                <ul>
-                    <li class="expandnarrow" id="10"><span></span> </li>
-                </ul>
-                <div class="blogDiv">
-        
-                    <p><span class="firstcharacter"> B</span>efore writing about using "use strict" in javascript, i should also tell
-                        you javascript interpreter does not warn you about every possible situation. Sometimes javascript just assumes your intention and do some correction. "use strict" just enforce the interpreter to interpret program with more strict rules. ES6 is implemented with "use strict" so it is the default. </p>
-                    <div class="gap"></div>
-                    <p>Let me show you simple error. There is more you can sure of it. Assuming we are in es5 environment. ES -> ECMAScript
-                        </p>
-                    <pre><code class="javascript">
-              x = 2;
-              console.log(x); 
-              //You will see 2 on your console.
-              </code></pre>
-                    <div class="gap"></div>
-                    <p> What if we use these two lines of code with "use strict" </p>
-                    <pre><code class="javascript">
-              "use strict" 
-              x = 2; 
-              console.log(x);
-            </code></pre>
-                    <ul>
-                        <li><a href="https://jsfiddle.net/hellyeah/6uvtd4tv/2/" target="_blank"><b class="bold"> 
-                Now we check developer tools with f12. Assuming you are using chrome browser. Uncaught ReferenceError: x is not defined -> You should define x before.  
-               using it.</b></a></li>
-                    </ul>
-                    <p>
-                        Strict mode will help you with those. </p>
-                    <div class="gap"></div>
-                    <ul>
-                        <li> It catches some common coding mistake, throwing more exceptions. </li>
-                        <li> It prevents or throws an exception when something unsafe is done. Check the example below. </li>
-                        <li> Disallows the declaration of a new variable without var. If you take a look at the example above. You will see
-                            that I didn't define x with var (in the version without "use strict" ES5 just define the variable globally.
-                            So it is hoisted at the top.</li>
-                        <li>You have to define object with different key values. </li>
-                        <li> It will avoid defining function with same parameter name. </li>
-                    </ul>
-                    code: "use strict"; function func(foo, foo){} error: Duplicate parameter name not allowed in this context.
-                    <div
-                        class="gap"></div>
-        
-                There are two ways to use "use strict". You can either define "use strict" at the top or you can define it in function. It depends on use case. Check this statement out to have a clearer perspective.
-                <div class="gap"></div>
-        
-                if you' rewriting from scratch and want to follow a particular convention, just use it. if you're in a file that's been written by other people, you likely wouldn't put use strict up at the top.
-                <ul>
-                    <li><a href="http://caniuse.com/#feat=use-strict" target="_blank"><b class="bold">This is the support table of "use strict"</b></a>                </li>
-                    <li><a href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf" target="_blank"><b class="bold">You can find something useful in page #235 </b></a></li>
-                </ul>
-            </div>
-            </div>
-            <div class="subContainer">
-                <ul>
-                    <li class="expandnarrow" id="11"> <span></span> </li>
-                </ul>
-                <div class="blogDiv">
-        
-                    <p><span class="firstcharacter">J</span>SON is an initialism of JavaScript Object Notation. It is special data structure
-                        we use, generally for establishing a connection between frontend and backend with AJAX that is illustrated here just after some moments. First, in order to clarify JSON in your mind, you can think as dictionary structure in c#, java. That is similar since all of them have key, value pair.</p>
-                    <div class="gap"></div>
-        
-                    <p>You can define object in js like below</p>
-                    <pre><code class="javascript">
-                var obj = {};
-                var obj = [{}] 
-                /* object inside array When you one of these you have 
-                an empty object. You can define those with some 
-                elements like below.*/
-                var obj = {"foo" : "bar"};
-                var obj = {"foo" : "bar", "bar", "zar"}; 
-                var obj = [{"foo" : "bar"}, {"bar" : "zar"}];
-                var obj = {"foo" : "bar", "foo", "zar"} 
-                </code></pre>
-                    <ul>
-                        <li><a href="https://jsfiddle.net/6yz5o6tn/" target="_blank"><b class="bold">Second foo overrides the first one</b></a>                    </li>
-                    </ul>
-        
-                    <p>value part can be any type like Number, String, NaN even it can be function and you can use value of your object
-                        inside the function.</p>
-                    <ul>
-                        <li><a href="https://jsfiddle.net/4tnmfq25/1/" target="_blank"><b class="bold"> Example</b></a></li>
-                    </ul>
-                    <div class="gap"></div>
-                    <p>There are two main methods for handling JSON that are mentioned below
-                        <div class="gap"></div>
-                        <ul>
-                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse"
-                                    target="_blank"><b class="bold">JSON.parse</b></a></li>
-                            <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify"
-                                    target="_blank"><b class="bold">JSON.stringify</b></a></li>
-                        </ul>
-                        <div class="gap"></div>
-                        <p>In <b class="bold">Ajax</b>, your string must be compatible with JSON format. So It will be parsed for backend
-                            usage.</p>
-        
-                        <ul>
-                            <li><a href="http://jsfiddle.net/eog6jk40/" target="_blank"><b class="bold">AJAX</b></a> </li>
-                        </ul>
-                        <div class="gap"></div>
-        
                         <p>
-                            <span class="firstcharacter">I</span> am about to talk about markdown syntax. Using markdown syntax is important for constructing clear-looking Readme.md file in your GitHub project. You can check an example here. It is made with <a href="https://github.com/spinningcat/Person-On-Duty/blob/master/README.md"
+                            <span class="firstcharacter">I</span> am about to talk about markdown syntax. Using markdown
+                            syntax is important for constructing clear-looking Readme.md file in your github project. You
+                            can check an example here. It is made with <a href="https://github.com/spinningcat/Person-On-Duty/blob/master/README.md"
                                 target="_blank"><b class="bold"> markdown syntax</b></a>. The reason of that, you can have good
                             looking document with just really simple syntax. Actually there is something more possible with
                             "pandoc" package you can covert your .md to .pdf easily.
@@ -829,7 +617,7 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                                 <div class="gap"></div>
 
                                 <p> You can make your text emphasis, italics, bold or whatever with *,**,_,__ or you can combine
-                                    them in a semantic way.</p>
+                                    them in semantic way.</p>
 
                                 <ul>
                                     <li> *asterisks*</li>
@@ -859,8 +647,9 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                                 </ul>
                                 <div class="gap"></div>
                                 <p>
-                                    Keep in mind that the number of first item is really important. This version starts with 1, but there is a different number in the version on the link I've shared. For ordered list you use number for unordered
-                                    list you use *. It is pretty similar to HTML right.
+                                    Keep in mind that the number of first item is really important. This version starts with 1, but there is a different number
+                                    in the version on the link I've shared. For ordered list you use number for underordered
+                                    list you use *. It is pretty similar to html right.
                                 </p>
                                 <ul>
                                     <li> * Ordered list item #1</li>
@@ -877,48 +666,51 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
 
                     <p> It is possible to put code here with below syntax.</p>
                     <ul>
-                        <li> <a href="https://jsfiddle.net/hellyeah/ysctqyyc/1/" target="_blank"> <b class="bold">Example #1</b> </a>                    </li>
-                    </ul>
-                    <div class="gap"></div> <b class="bold">Multiple select boxes</b>
-                    <ul>
-                        <li>
-                            <p> <a href="https://jsfiddle.net/hellyeah/ysctqyyc/2/" target="_blank"><b class="bold">Example #2</b> </a></li>
-                    </ul>
-                    <div class="gap"></div><b class="bold">Select box with labels</b>
-                    <ul>
-                        <li> <a href="https://jsfiddle.net/hellyeah/ysctqyyc/2/" target="_blank"> <b class="bold">This is for single selection.</b></a>                    </li>
-                        <li> <a href="https://jsfiddle.net/hellyeah/ysctqyyc/4/" target="_blank"> <b class="bold">This is for multiple selection</b> </a>                    </li>
-                    </ul>
-                    <p> You can type letters when you select item here it will show the result immediately. To be honest it can make
-                        your job easier in case of having long drop down list</p>
-                    <b class="bold">Placeholder </b>
-                    <p> Example that i shared before us placeholder. Place holder is really nice feature If you want to direct user about
-                        what type of selection they will do. So Check below.</p>
-                    <ul>
-                        <li><a href="https://jsfiddle.net/hellyeah/ysctqyyc/5/" target="_blank"> <b class="bold">Placeholder</b> </a>                    </li>
-                    </ul>
-                    <div class="gap"></div><b class="bold">Data Source</b>
-                    <p> Select2 can be feeded from a data source Also you can do default selection.</p>
-                    <ul>
-                        <li><a href="https://jsfiddle.net/hellyeah/ysctqyyc/6/" target="_blank"> <b class="bold">Selection from data source</b></a></li>
+                        <li>```javascript</li>
+                        <li> var s = "JavaScript syntax highlighting" </li>
+                        <li> alert(s);</li>
+                        <li> ```</li>
                     </ul>
                     <div class="gap"></div>
-                    <b class="bold"> Limit amount of selection </b>
-                    <p>You can select as must as you state with maximumSelectionLength.</p>
                     <ul>
-                        <li><a href="https://jsfiddle.net/hellyeah/ysctqyyc/7/" target="_blank"> <b class="bold">Selection from data source</b> </a></li>
+                        <li> ```python </li>
+                        <li> s = "Python syntax highlighting" </li>
+                        <li> print s</li>
+                        <li> ```</li>
                     </ul>
-                    <div class="gap"></div><b class="bold"> Bootstrap Support </b>
+                    <div class="gap"></div>
+
+                    <p> You can construct a table in markdown it is like html's table with simple syntax shown below.</p>
                     <ul>
-                        <li><a href="https://select2.github.io/select2-bootstrap-theme/" target="_blank"> <b class="bold">Select2</b></a>                    </li>
-                        <li><a href="https://select2.github.io/" target="_blank"> <b class="bold">Select 2 Project Page</b> </a> </li>
-                        <li><a href="https://github.com/select2/select2" target="_blank"> <b class="bold">Select 2 Github Page</b> </a>                    </li>
+                        <li> sometihng | other thing | another thing </li>
+                        <li> ---| ---- | ---</li>
+                        <li> item #1 | item 2 | item3 </li>
+                        <li>text 1 | text 2 | text3 </li>
                     </ul>
-            </div>
+                    <p>You can put blankquates.</p>
+                    <ul>
+                        <li> > The world has experience weird events currently.</li>
+                        <li> > The kid his name is Laren ipsum randomly read randomly created text so easily. This baby was 2
+                            years uld.</li>
+                    </ul>
+                    <div class="gap"></div>
+
+                    You can have horizontal lines with different appearances it seems with those.
+                    <div class="gap"></div>
+                    <ul>
+                        <Li> --- </Li>
+                        <Li> *** </Li>
+                        <Li> ___ </Li>
+                    </ul>
+                    <p> That is all for now you can get and play it around here.</p>
+                    <ul>
+                        <li><a href="https://github.com/spinningcat/md-syntax/blob/master/README.md" target="_blank"><b class="bold">All in one</b></a></li>
+                    </ul>
+                </div>
             </div>
             <div class="subContainer">
                 <ul>
-                    <li class="expandnarrow" id="16"><span></span> </li>
+                    <li class="expandnarrow" id="7"><span></span> </li>
                 </ul>
                 <div class="blogDiv">
                     <p>
@@ -929,7 +721,8 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                         </ul>
 
                         <p> I need to get your attention here for this line var b = a + ""; + may seem like mathematical operation
-                            to you and you can consider how you can combine Number type with String type. Well, it is just about coercion and in this scenario, you can be considered + as a tool for explicit coerce.
+                            to you and you can consider how you can combine Number type with String type. Well it is just
+                            about coercion and in this scenerio, you can be considered + as a tool for explicit coerce.
                             <div
                                 class="gap"></div>
                 <b class="bold">Abstract Value Operation</b>
@@ -957,9 +750,9 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                 <div class="gap"></div>
                 <b class="bold">ToBoulean</b>
                 <p>As we already knew, true and false and 1 and 0 is same thing. It is likely 0 means false, 1 means true. But
-                    this is not necessarily legitimate in Javascript. Because all non-zero numbers in javascript mean true.
+                    this is not necessarily legitimate in Javascript. Because all non-zero numbers in javascript means true.
                     </p>
-                <p>Additional note : ! is a convenient shorthand for converting a truthy /falsy value to true/false. Also you
+                <p>Additional note : ! is a convenient shorthand for converting a truthy /falsy value to true/false. Aslo you
                     can define boolean variable with !.
                     <ul>
                         <li><a href="https://jsfiddle.net/hellyeah/w2r71zc2/2/" target="_blank"><b class="bold">boolean case</b></a>                            </li>
@@ -978,7 +771,7 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
             </ul>
             <div class="blogDiv">
                 <p> <span class="firstcharacter">P</span>ug is HTML templating engine, primarily used in NodeJS. The way for
-                    writing markup is new and innovative in pug and gives you some advantages over HTML. Let's look at example.</p>
+                    writing markup is new and innovative in pug and gives you some advantages over HTML. Lets look at example.</p>
 
                 <pre><code class="html1">
                 &lt;div&gt;
@@ -991,7 +784,7 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                 &lt;p&gt;&lt;This is ordinary paragraph.&gt;&lt;/p&gt;
                 </code></pre>
 
-                <p> Now I will demonstrate the same thing with pug and I try to get your attention to some useful tools that are brought
+                <p> Now i will demonstrate same thing with pug and i try to get your attention to some useful tools that is brought
                     to table by pug. I will use <a href="https://codepen.io/" target="_blank"><b class="bold">codepen.io</b></a>                    for that.</p>
                 <ul>
                     <li><a href="https://codepen.io/anon/pen/Jyxxga" target="_blank"> <b class="bold">Pug basic</b></a></li>
@@ -1016,7 +809,7 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                 <p> &lt;p id="id" class="class"&gt;&lt;/p&gt;</p>
                 <div class="gap"></div>
 
-                <p> As you can guess pug gives you a way for doing the same task. Lets look at codepen.io example</p>
+                <p> As you can guess pug gives you a way for doing same task. Lets look at codepen.io example</p>
                 <ul>
                     <li> <a href="https://codepen.io/anon/pen/zdeboJ" target="_blank"><b class="bold"> Attributes in pug </b></a></li>
                 </ul>
@@ -1075,7 +868,9 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
 
             <div class="gap"></div>
             <p>Html panel in line 2 through line 24, we just surrounded html markup with script tag. This markup is not in the
-                DOM yet. It is just a string. The purpose here about using handlebars, as you see in the result panel is to create same elements multiple times. So if you want to create some part of a page that may be repeated multiple times. You may just use</p>
+                DOM yet. It is just a string. The purpose here about using handlebars, as you see in the result panel is
+                to create same elements multiple times. So if you want to create some part of page that may be repeated multiple
+                times. You may just use</p>
             <ul>
                 <li><a href="http://handlebarsjs.com/" target="_blank"><b class="bold">Handlebars
                         template engine</b></a></li>
@@ -1132,9 +927,11 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
         <div class="blogDiv">
 
             <p><span class="firstcharacter"> B</span>efore writing about using "use strict" in javascript, i should also tell
-                you javascript interpreter does not warn you about every possible situation. Sometimes javascript just assumes your intention and do some correction. "use strict" just enforce the interpreter to interpret program with more strict rules. ES6 is implemented with "use strict" so it is the default. </p>
+                you javascript interpreter does not warn you about every possible situtation. Sometimes javascript just assumes
+                your intension and do some correction. "use strict" just enforce the interpreter to interpret program with
+                more strict rules. ES6 is implemented with "use strict" so it is default. </p>
             <div class="gap"></div>
-            <p>Let me show you simple error. There is more you can sure of it. Assuming we are in es5 environment. ES -> ECMAScript
+            <p>Let me show you simple error. There is more you can sure of it. Assumin we are in es5 environment. ES -> ExmaScript
                 </p>
             <pre><code class="javascript">
       x = 2;
@@ -1159,8 +956,8 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
             <ul>
                 <li> It catches some common coding mistake, throwing more exceptions. </li>
                 <li> It prevents or throws an exception when something unsafe is done. Check the example below. </li>
-                <li> Disallows the declaration of a new variable without var. If you take a look at the example above. You will see
-                    that I didn't define x with var (in the version without "use strict" ES5 just define the variable globally.
+                <li> Disallows the declaration of a new variable without var . If you take a look at example above. You will see
+                    that i didnt define x with var (in version without "use strict" ES5 just define the variable globally.
                     So it is hoisted at the top.</li>
                 <li>You have to define object with different key values. </li>
                 <li> It will avoid defining function with same parameter name. </li>
@@ -1169,10 +966,12 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
             <div
                 class="gap"></div>
 
-        There are two ways to use "use strict". You can either define "use strict" at the top or you can define it in function. It depends on use case. Check this statement out to have a clearer perspective.
+        There is two ways to use "use strict". You can either define "use strict" at the top or you can define it in function. It
+        depends on use case. Check this statement out to have clearer perspective.
         <div class="gap"></div>
 
-        if you' rewriting from scratch and want to follow a particular convention, just use it. if you're in a file that's been written by other people, you likely wouldn't put use strict up at the top.
+        if you' re writing from scratch and want to follow a particular convention, just use it. if you're in a file that's been
+        written by other people, you likely wouldn't put use strict up at the top.
         <ul>
             <li><a href="http://caniuse.com/#feat=use-strict" target="_blank"><b class="bold">This is the support table of "use strict"</b></a>                </li>
             <li><a href="http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf" target="_blank"><b class="bold">You can find something useful in page #235 </b></a></li>
@@ -1186,7 +985,9 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
         <div class="blogDiv">
 
             <p><span class="firstcharacter">J</span>SON is an initialism of JavaScript Object Notation. It is special data structure
-                we use, generally for establishing a connection between frontend and backend with AJAX that is illustrated here just after some moments. First, in order to clarify JSON in your mind, you can think as dictionary structure in c#, java. That is similar since all of them have key, value pair.</p>
+                we use, generally for establishing connection between frontend and backend with AJAX that is illustrated
+                here just after some moments. First in order to clarify JSON in your mind you can think as dictionary structure
+                in c#, java. That are similar since all of them have key, value pair.</p>
             <div class="gap"></div>
 
             <p>You can define object in js like below</p>
@@ -1229,7 +1030,9 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                 <div class="gap"></div>
 
                 <p>
-                    JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy to write and read for humans, and parse and generate for computers. It is the format of for establishing communication between frontend and backend. It is illustrated above. It is also used for storing or exporting data, and for exchanging
+                    JSON (JavaScript Object Notation) is a lightweight data-interchange format that is easy to write and read for humans, and
+                    parse and generate for computers. It is the format of for establishing communication between frontend
+                    and backend. It is illustrated above. It is also used for storing or exporting data, and for exchanging
                     data between many other languages.
                 </p>
                 <div class="gap"></div>
@@ -1253,7 +1056,9 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
 
             <p>
                 <span class="firstcharacter">B</span>efore writing about how width is calculated, we need to focus on container
-                block. Since everything is a web page is modeled as a box, inner box will be measured in terms of how big it is or how small it is by focusing on the outer box's size. At the end of the article, i am gonna share nice example. Simple container definition can be done like that.
+                block. since everything ia a web page is modelled as box, inner box will be measured in terms of how big
+                it is or how small it is by focusing on the outer box's size. At the end of article i am gonna share nice
+                example. Simple container definition can be done like that.
             </p>
 
             <pre><code class="javascript">&lt;div class="container"&gt;</code></pre>
@@ -1261,7 +1066,7 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
             <pre><code class="javascript">&lt;/div&gt; </code></pre>
             <pre><code class="javascript">&lt; /div&gt;</code></pre>
 
-            <p> As we said above everything in a web page is modeled as a box. And each box has some areas that have a part of
+            <p> As we said above everything in a web page is modelled as box. And each box has some areas that has a part of
                 calculating actually size of the box.</p>
             <ul>
                 <li>Content area</li>
@@ -1270,7 +1075,7 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                 <li>Margin area</li>
             </ul>
             <p> Let me bring a method to the table getComputedStyle(). With this method you can see spesific measurements of
-                box in terms of items in the list. An example is below.
+                box in terms of items in the list. Example is below.
                 <ul>
                     <li> <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle" target="_blank"><b class="bold">getComputedStyle()</b></a>                        </li>
                     <li> <a href="https://jsfiddle.net/hellyeah/Lv6me6s4/21/" target="_blank"><b class="bold">Using getComputedStyle() method to get margin, padding, width and height</b></a>                        </li>
@@ -1311,14 +1116,17 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
             <div class="gap"></div>
             <b class="bold">Creating popup windows</b>
             <p> This question come to mind easily. So explanation is quiet simple and straightforward. A modal window is on top
-                of everything else and it requires the user to close it before doing anything below it. A popup usually appears without bothering the user too much and it doesn't interrupt the user's workflow. Check the example below
+                of everything else and it requires the user to close it before doing anything below it. A popup usually appears
+                without bothering the user too much and it doesn't interrupt the user's workflow. Check the example below
                 </p>
             <ul>
                 <li><a href="https://jsfiddle.net/hellyeah/jb8h46sn/" target="_blank"><b class="bold">Modal and popup with styling little bit</b></a>                    </li>
             </ul>
             <div class="gap"></div>
             <p> You can have two different popup style. One is regular and the other is autoclose popup When you click popup2
-                the button you will see a popup contains hello message will be appeared and there is a progress bar below. That may come in handy if you want to show your message for a limited time. It will stay there then poof it will disappear.. Also, there is a textarea element to show you-you can still work on your page while popup appears.
+                button you will see a popup contains hello message will be appeared and there is a progress bar below. That
+                may come in handy if you want to show your message for a limited time. It will stay there then poof it will
+                disappear.. Also there is a textarea element to show you you can still work on your page while popup appears.
                 It wont disturb you. Handy huh pretty neat.</p>
             <ul>
                 <li><a href="https://jsfiddle.net/hellyeah/mzt8hzuf/2/" target="_blank"><b class="bold">Regular popup and autoclose popup</b></a>                    </li>
@@ -1326,7 +1134,8 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
             <div class="gap"></div>
             <b class="bold">Custom key Detection</b>
             <p>you have a blog page people can add articles or update them . When one of this happens, You can send modal as
-                message to other users. And users who were informed about that change could click escape key to inform user like "I got your message". Thanks to that everyone knows who make a change on the page</p>
+                message to other users. And users who was informed about that change, could click escape key to inform user
+                like "i got your message". Thanks to that everyone knows who make a change on the page</p>
             <ul>
                 <li><a href="https://jsfiddle.net/hellyeah/z0gdjotn/1/" target="_blank"><b class="bold">Click escape</b></a>                    </li>
             </ul>
@@ -1383,91 +1192,24 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
                     <li> zStock_level:1 -> changes the starting z-index, for example, there is level 1, like 501, 502, 503, and
                         level 2, 5001, 5002, 5003 (but they're actually more zeroes) </li>
                     <li> lock -> true or false value. Disables scrolling from the background window, for example if you use the
-                        mousewheel on a modal, it won't propagate to the body and scroll the body </li>
+                        mousewheel on a modal, it won't propagate to the body and scrull the body </li>
                 </ul>
 
-                <div class="blogDiv">
-                        <p><span class="firstcharacter"> D </span>OMContentLoaded event is fired when html document is completely 
-                        loaded and parsed. If you use jquery you should now $(document).red(function(){..}) is syntatic sugar of 
-                        DOMContentLoaded event. </p><div class="grap"></div>
-                        <pre><code class="javascript">document.addEventListener("DOMContentLoaded", ready); </code></pre>
-        
-                        <p>There is also <b class="bold">async</b> and <b class="bold">defer</b> keyword. your script element should be either or both. Reason is initial-scale
-                            performance. </p><div class="grap"></div>
-                            
-                        <p>by forcing them to be neither you block parsing of the rest of 
-                        the content (which means the browser does not even get to render anything if the 
-                        <b class="bold">script</b> element comes before the body. </p>        
-                        <p>So I guess whenever you have a DOMContentReady handler you 
-                        might as well make the script async to benefit from rendering and compiling your 
-                        code in parallel.
-                        </p><div class="grap"></div>
-                        
-                        <p>of course that then requires the <b class="bold">script</b> element to come as 
-                        early as possible before any elements that require synchronous processing are 
-                        discovered (such as a non-async/defer script or the <b class="bold">body</b>)
-                        </p><div class="grap"></div>
-                        
-                        <p><b class="bold">Async</b></p>
-                        <p>It is a boolean value. Browser execute script asynchronously.</p><div class="grap"></div>
-                        <p><b class="bold">Async</b></p>
-                        <p>Script is executed before firing DOMContentLoaded</p><div class="grap"></div>
-                        <pre><code class="html">
-                              &gt;!doctype html&gt;
-                              &lt;html&gt;
-                              &lt;head%gt;
-                              &lt;title>Example&lt;/title&gt;
-                              &lt;/head&gt;
-                              &lt;body&gt;
-                              &lt;script src="ex.js" async &gt;&lt;/script&gt;
-                              &lt;img class="img" src="https://www.w3schools.com/css/img_fjords.jpg"&gt;
-                              &lt;/body&gt;
-                              &lt;/html&gt;
-                       </code> </pre>
-                             
-                                <p><b class="bold">JavaScript</b></p>
-                                <pre><code class="javascript">
-                                function ready() {
-                                    console.log('DOM is ready');
-                                    var img = img = document.querySelector("img");
-                                    // image is not yet loaded (unless was cached), so the size is 0x0
-                                    console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
-                             }document.addEventListener("DOMContentLoaded", ready);
-                          </code></pre>
-                        <p>
-                            DOMContentLoader evvent triggers on document when dom is ready we can apply javascript
-                            to elements at that time.
-                        </p>
-                        <p>
-                            Images and other sources may still continue loading.
-                        </p>
-                        <a href="./img/async-vs-defer-twitter.png" data-lightbox="image"> </a>
-                        <img src="./img/async-vs-defer-twitter.png"  alt="async-defer" width="850" height="450" class="big">
-        
-                </div>
-                </div>
-        
-        
-            </div>
-            </div>
-           
-            </div>
-            <div class="lineContainer">
-                <hr class="line2">
-            </div>
-           <p> <a href="https://github.com/madprops/Msg" target="_blank"><b class="bold">Documentation and demo page </b></a></p>
+                <p> <a href="https://github.com/madprops/Msg" target="_blank"><b class="bold">Documentation and demo page </b></a></p>
                 <p> <a href="https://github.com/madprops/Msg/wiki/Caching-Strings" target="_blank"><b class="bold">Wiki page</b></a>                    </p>
         </div>
 
     </div>
     <div class="subContainer">
         <ul>
-            <li class="expandnarrow" id="18"><span></span> </li>
+            <li class="expandnarrow" id="14"><span></span> </li>
         </ul>
         <div class="blogDiv">
 
             <p><span class="firstcharacter"> S</span>pecificity means which css property values will be applied to element.
-                Specificity measure with a weight of CSS selectors. If an element will have class and id together and id and class have the same set of rules in the id will be applied. If selectors have same weight, last selector you define in CSS file will be applied. </p>
+                Spesicifity measure with a weight of css selectors. If an element will have class and id together and id
+                and class have same set of rules in the id will be applied. If selectors have same weight, last selector
+                you define in css file will be applied. </p>
             <ul>
                 <li> <a href="https://jsfiddle.net/hellyeah/xch2j38t/" target="_blank"> <b class="bold">Example #1</b></a> </li>
             </ul>
@@ -1513,7 +1255,7 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
     </div>
     <div class="subContainer">
         <ul>
-            <li class="expandnarrow" id="19"><span></span> </li>
+            <li class="expandnarrow" id="15"><span></span> </li>
         </ul>
         <div class="blogDiv">
             <p><span class="firstcharacter"> S </span>elect2 is the jQuery replacement for selecbox. Select2 gives you a customizable
@@ -1657,7 +1399,7 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
             <div class="blogDiv">
                     <span class="firstcharacter">C</span>SS has many length units such as px, em, rem , vh, vw etc. Each of them has use-case and advantages.
                 The thing is you need to decide which length unit is convenient for target-device. In web, nowadays, media 
-                queries are widely used to define CSS rules for the screen with specific size.
+                queries is widely used to define css rules for screen with spesific size.
 
                 </div>
                 </div>
@@ -1674,24 +1416,22 @@ learn to the world."<i class="fa fa-smile-o" aria-hidden="true"></i>
   
 </div>
 
-        </div>
-        
-        
-        
-        
-        
-            <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-            <!-- JQuery UI stylesheet -->
-            <link rel="stylesheet" href="https://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" media="all" />
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
-        
-            <!-- First get JQuery -->
-            <script src="./js/highlight.min.js" type="text/javascript"></script>
-            <!-- Then get JQuery UI -->
-            <script src="https://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
-            <script src="./js/myscript.js"></script>
-        
-        </body>
-        
-        </html>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <!-- JQuery UI stylesheet -->
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" media="all" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
+    <!-- First get JQuery -->
+    <script src="./js/highlight.min.js" type="text/javascript"></script>
+    <!-- Then get JQuery UI -->
+    <script src="https://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    <script src="./js/myscript.js"></script>
+
+</body>
+
+</html>
