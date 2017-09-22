@@ -21,7 +21,8 @@
     <div id="container">
         <div class="leftContainer">
             <div class="left">
-                    <a href="https://www.dropbox.com/sh/lstvvctaveicyqm/AABrJKBXKiuAXUtFiXAox3Uea?dl=0 " target="_blank">   <i class="fa fa-dropbox" aria-hidden="true"></i></i></a>
+                    <a href="https://www.dropbox.com/sh/lstvvctaveicyqm/AABrJKBXKiuAXUtFiXAox3Uea?dl=0 " target="_blank">  <i class="fa fa-bluetooth-b" aria-hidden="true"></i>
+                    </a>
                 <a href="https://www.github.com/spinningcat" target="_blank"> <i class="fa fa-github" aria-hidden="true"></i> </a>
                 <a href="https://www.linkedin.com/in/berat-emre-nebioğlu-08a58113" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                 <a href="https://jsfiddle.net/user/hellyeah/ " target="_blank">  <i class="fa fa-jsfiddle" aria-hidden="true"></i></a>
@@ -1390,10 +1391,65 @@
                 <li class="expandnarrow" id="18"><span></span> </li>
             </ul>
             <div class="blogDiv">
-                    <span class="firstcharacter">C</span>SS has many length units such as px, em, rem , vh, vw etc. Each of them has use-case and advantages.
+            <p><span class="firstcharacter">C</span>ascading Style Sheet known as CSS has many length units such as px, em, rem , vh, vw etc. Each of them has use-case and advantages.
                     The thing is you need to decide which length unit is convenient for target-device. In web, nowadays, media 
                     queries is widely used to define CSS rules for screen with specific size.
+            </p>
+            <p>Let's examine unitys with examples. I will share an example for every unit. I will use 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/getComputedStyle"><b class=bold>GetComputedStyle()</b></a>method to show those units in real example.
+            Also possible to find the support of those units in browsers. You can check the support of html elements
+        from <a href="https://caniuse.com/"><b class="bold">Can I Use? It is compatibility check for browser.</b></a> </p>
+            <p><b class="bold">%</b></p>
+            <ul>
+                    <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/9/embedded/result/"><b class="bold">% unit</b></a></li>
+                        <li> As you see subcontainer just get the 80% space of container.</li>
+                            <li><b class="bold">Additional Note: If you want a box of different sized text to scale nicely in a responsive matter you'll want to use em.</b></li>  
+            </ul>
+            <p><b class="bold">ch</b></p>
+            <ul>
+                    <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/13/embedded/result"><b class="bold">% unit</b></a></li>
+                    <li> CH would be the most useful to guess how many characters wide some text is, but that only (sort of kind of) works if the font-family is monospace.</li>
+                                       
 
+                </ul>
+                <p><b class="bold">rem</b></p>
+                <ul>
+                        <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/12/embedded/result"><b class="bold">% unit</b></a></li>
+                        <li> rem = html element's font-size. IF the user increases or decreases their font-size at the OS or browser level it increases the size of everything. </li>
+                 </ul>
+                 <p><b class="bold">vw</b></p>
+                 <ul>
+                         <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/16/embedded/result"><b class="bold">% unit</b></a></li>
+                         <li> In this example subContainer takes 20% space of container. So 1vw is like 1% width of container.</li>
+                                            
+     
+                     </ul>
+                     <p><b class="bold">vh</b></p>
+                     <ul>
+                             <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/15/embedded/result"><b class="bold">% unit</b></a></li>
+                             <li> In this example subContainer takes 20% space of container. So 1vh is like 1% width of container.</li>
+                                                
+         
+                         </ul>
+                 <p>Genetal Notes</p>
+                 <ul>
+                     <li>
+                            we just set the font-size in the body {} in css (something like 80% for example) and then everywhere else we use em
+                     </li>
+                     <li>
+                           For accessibility adjustments (ie: for poor eyesight) users can just adjust the % in the body 
+                        </li>
+                        <li>
+                                So  long as you consistently use em everywhere else then it will scale nicely when users adjust size / zoom factor
+                            </li>
+                            <li>
+                                    rem is relative ems to the main font size, em will be relative to it's parent.
+                            </li>
+                     <li>
+                         Rrem is relative ems to the main font size, em will be relative to it's parent.
+                         </li>           
+
+                 </ul>
                 </div>
                 </div>
 
