@@ -338,6 +338,15 @@
     margin: 0;
     padding: 0;
   }
+  .canvas, .javascript, .html, .php {
+    margin: 0;
+    padding: 0;
+    border:none;
+    font-size:0.4em;
+  
+  
+    
+    }
  
 }
 @media screen 
