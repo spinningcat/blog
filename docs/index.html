@@ -1556,26 +1556,36 @@
                                 Method that we use is <a href="http://php.net/manual/tr/function.file-put-contents.php"><b class="bold">function.file_put_contents </b></a></p><div class="gap"></div>
                                 <pre><code class="php">
           &lt;?php header('Content-Type: application/json');
-        $stringData = $_POST["dataString"]; ssrequire_once "vendor/autoload.php";
+        $stringData = $_POST["dataString"]; 
+        require_once "vendor/autoload.php";
         error_reporting(-1); 
-        ini_set('display_errors', '1'); use PHPMailer\PHPMailer\PHPMailer;
+        ini_set('display_errors', '1'); 
+        use PHPMailer\PHPMailer\PHPMailer;
         $var1 = substr($stringData, 22);
         //$var2 = explode(',', $var1[0]);
         $stringData = base64_decode($var1);
         file_put_contents('/home/hellyeah/image1.png', $stringData);
         $mail = new PHPMailer(true); 
-        // the true param means it will throw exceptions on errors, which we need to catch
-        $mail->IsSMTP(); // telling the class to use SMTP try {
-          $mail->Host       = "mail.gmail.com"; // SMTP server
-          $mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
-          $mail->SMTPAuth   = true;                  // enable SMTP authentication
-          $mail->SMTPSecure = "ssl";                 // sets the prefix to the servier
-          $mail->Host       = "smtp.gmail.com";      // sets GMAIL as the SMTP server
+        // the true param means it will throw exceptions on errors, 
+        which we need to catch $mail->IsSMTP(); 
+        // telling the class to use SMTP try {
+          $mail->Host       = "mail.gmail.com"; 
+          // SMTP server
+          $mail->SMTPDebug  = 2;                     
+          // enables SMTP debug information (for testing)
+          $mail->SMTPAuth   = true;                  
+          // enable SMTP authentication
+          $mail->SMTPSecure = "ssl";                 
+          // sets the prefix to the servier
+          $mail->Host       = "smtp.gmail.com";      
+          // sets GMAIL as the SMTP server
           $mail->Port       = 465;   // set the SMTP port for the GMAIL server
           $mail->SMTPKeepAlive = true;
           $mail->Mailer = "smtp";
-          $mail->Username   = "...@gmail.com";  // GMAIL username
-          $mail->Password   = "...";            // GMAIL password
+          $mail->Username   = "...@gmail.com";  
+          // GMAIL username
+          $mail->Password   = "...";            
+          // GMAIL password
           $mail->AddAddress('...@gmail.com', 'abc');
           $mail->addAttachment('.../image1.png');
           $mail->SetFrom('....@gmail.com', 'def');
@@ -1586,9 +1596,11 @@
           echo "Message Sent OK \n";
          //header("location: ../test.html");
      } catch (phpmailerException $e) {
-        echo $e->errorMessage(); //Pretty error messages from PHPMailer
+        echo $e->errorMessage(); 
+        //Pretty error messages from PHPMailer
      } catch (Exception $e) {
-         echo $e->getMessage(); //Boring error messages from anything else!
+         echo $e->getMessage(); 
+         //Boring error messages from anything else!
          }?&gt;      
       
                         </code></pre>
