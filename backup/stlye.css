@@ -750,7 +750,13 @@ html, body {
        width:30%;
        max-width:30%;
     }
-  
+    #container .leftContainer .left .fa{
+      font-size:60px;
+      padding:20px;
+      margin-top:2%;
+     
+       
+    }
    
     #container .rightContainer{
       display : flex;
