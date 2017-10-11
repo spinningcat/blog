@@ -1622,23 +1622,215 @@
                                         <p> <span class="firstcharacter">N</span>odeJS gives you ability to write
                                             JavaScript code in the backend. Node is for developing data transferring
                                              application. Some examples of node application is listed below. </p>
+                                            <div class="gap"></div>
                                              <ul>
                                                  <li>Chat Client</li>
                                                  <li>Real Time user update </li>
                                                  <li>RSS feed</li>
                                                  <li>Online Shop</li>
-                                         </ul>
+                                         </ul><div class="gap"></div>
                                          <p> Time to develop small node app. Let's dive in.
+                                         </p><div class="gap"></div>
+                                         <p> I am debian buster/sid user. Buster is debian testing branch. I will share a  link to install nodejs to debian OS.</p>
+                                         <div class="gap"></div> <p><b class="bold">Additional Note:</b> You can check your version of Debian with lsb_release -a command. It will print out kinda long response.
+                                         Also you can just simple use car /etc/debian_version.</p>
+                                         <div class="gap"></div> <ul>
+                                            <li>root@debian:...# lsb_release -a</li>
+                                            <li>Distributor ID:	Debian</li>
+                                            <li>Description: Debian GNU/Linux testing (buster)</li>
+                                            <li>Release: testing </li>
+                                            <li>Codename: buster</li>
+                                        </ul>
+                                        <ul>
+                                            <li>root@debian:....# cat /etc/debian_version 
+                                            </li>
+                                            <li>buster/sid</li>
+                                        </ul><div class="gap"></div>
+                                         <p>
+                                             For install nodejs, follow nodejs.
                                          </p>
-                                         <p> I am debian jessie user. I will sahre a link to install nodejs to debian OS.
-                                             It is the link <a href="https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-debian-8"><b class="bold">NodeJS</b></a>
-                                         </p>
+                                         <ul>
+                                             <li>curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+                                            </li>
+                                             <li>apt-get install nodejs</li>
+                                             <li>build-essential -> You may need to install this package to install packages from nodejs. Type aptitude install </li>
+                                         </ul><div class="gap"></div>
+                                         <p>In order to check version of node and npm. Try following codes.</p>
+                                         <ul>
+                                             <li>node -v -> Output: v8.6.0 </li>
+                                             <li>npm -v -> Output: 5.3.0
+                                            </li>
+                                         </ul><div class="gap"></div>
+                                         <p><b class="bold">Let's dive into a project with NodeJS</b></p>
+                                         <ol>
+                                             <li>First create a folder called simple_project. Command is <b class="bold">mkdir simple_project</b></li>
+                                             <li>pwd(print working directory) -> .../simple_project</li>
+                                             <li>Create Node project with command npm init. At the end of process you will see
+                                                 package.json will be created. You can type <b class="bold">nano package.json </b> 
+                                                 to see the content of that file. Information of every package you install for your project
+                                                 hold in that file. 
+                                             </li>
+                                           
+                                        </ol>
+                                        <p><b class="bold">package.json</b></p>
+                                        <pre><code class="nodejs">
+{
+"name": "simple",
+"version": "1.0.0",
+"description": "First touch to node",
+"main": "index.js",
+"scripts": {
+"test": "echo \"Error: no test specified\" && exit 1"
+},
+"author": "Berat Emre Nebioğlu",
+"license": "ISC"
+}
+                                          </code></pre>
+                                          <div class="gap"></div><p>Yay we have node project now. We can write javascript code. And it is interpreted in backend. </p>
+                                          <p>So simple Javascript code will work in backend. Example is below.</p>
+                                          <pre><code class="javascript">
+var arr = [1,2,3];
+arr.forEach(function(element,element){
+        console.log(element);
+});
+                                          </code></pre><div class="gap"></div>
+                                          <p><b class="bold">Type node index.js and see the result on console.</b></p>
+                                          <figure class="zoomable">
+                                                <a href="./img/nodeoutput.png" data-lightbox="image"> 
+                                                <img src="./img/nodeoutput.png"  alt="node"  class="node"></a>
+                                          </figure><div class="gap"></div>
+                                          <p><b class="bold">Additional node:</b>In order to create index.js. <b class="bold"> Type this command -> touch index.js</b></p>
+                                          <div class="gap"></div> <p>You need nodemon package to observe a change in the files. It is necessary when you construct a HTTP server
+                                             Because Http Server will be active all times. In order to install package, you will type the command
+                                            <b class="bold">npm install -g nodemon</b>. -g is a flag that means, install package globally instead of locally</p> 
+                                            <p><b class="bold">Important:</b>Dont forget to be root while installing node package.</p>
+                                            <p>Use nodemon instead of node and see what will happen. it is picturized with screenshot. After saving the files, it will be interpreted automatically..</p>
+                                            <figure class="zoomable">
+                                                    <a href="./img/nodeoutput2.png" data-lightbox="image"> 
+                                                    <img src="./img/nodeoutput2.png"  alt="node2"  class="node2"></a>
+                                              </figure><div class="gap"></div>
+                                              <p>NodeJS is runtime environment to move our frontend code to backend. But not just that,
+                                                  it is also possible to create HTTP Server with nodeJS. We can have web application 
+                                                  with nodeJS. NodeJS has many packages thats will fit your need. 
+                                              </p>
+                                              <p><b class="bold"> For more information:</b> npm search, use that command with package name such as 
+                                                  express that we take benefit from, to construct HTTP Server in a min. Also pay a visit to <a href="https://www.npmjs.com/" target="_black"><b class="bold">Node packages</b></a>
+                                              </p>
+                                             <p><b class="bold">Output</b></p>
+                                             <figure class="zoomable">
+                                                    <a href="./img/nodeoutput3.png" data-lightbox="image"> 
+                                                    <img src="./img/nodeoutput3.png"  alt="node3"  class="node2"></a>
+                                              </figure>
+                                              <p>We will install express now. We should write details of package to the package.json or we can use 
+                                                  another flag that does it for us. <b class="bold">--save -dev</b>
+                                              </p>
+                                              <ul>
+                                                  <li>npm install  express --save-dev</li>
+                                                  <li>if you dont use -g flag. You will see package.json is updated.</li>
+                                              </ul>
+                                              <pre><code class="node">
+"devDependencies": {
+    "express": "^4.16.2"
+}
+                                               </code></pre>
+                                               <p><b class="bold">Creating HTTP Server and Serving in HTML</b></p>
+                                               <p><b class="bold">HTML</b></p>
+                                               <pre><code class="html">
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;title>My Node App!&lt;/title&gt;
+&lt;head&gt;
+&lt;/head&gt;
+&lt;h1&gt;My App is alive!&gt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+                                                 </code></pre>
+                                                 <p><b class="bold">NodeJS</b></p>
+                                                 <pre><code class="javascript">
+// you need to include express first
+var express = require('express');
+// in order to use features of express you need to assign it to variable.
+var app = express();
+// create an express route for the home page
+// http://localhost:8080/
+app.get('/', function(req, res) {
+res.sendFile(__dirname + 'index.html');
+});
+// start the server on port 8080
+app.listen(8080);
+// send a message
+console.log('Server has started!');
+                                                </code></pre>
+                                                <p><b class="bold">Start HTTP Server -> nodemon index.js </b></p>    
+                                                <p><b class="bold">Result</b></p>
+                                                <figure class="zoomable">
+                                                        <a href="./img/nodeoutput4.png" data-lightbox="image"> 
+                                                        <img src="./img/nodeoutput4.png"  alt="node4"  class="node2"></a>
+                                                </figure>    
 
-                                         
-
-
+                                            </div>
     </div>
-    </div>
+    <div class="subContainer">
+            <ul>
+                <li class="expandnarrow" id="21"><span></span> </li>
+            </ul>
+            <div class="blogDiv">
+    
+                <p> <span class="firstcharacter">T</span>o be fair, debian is one of the most
+                robust and reliable operating system. This OS is well structure under some condition.
+                The suggest that is made is to follow debian's way while trying something. Thats the 
+                way if you dont want to break your system. So here is the list below to watch out and 
+                to follow. Yuo should really focus on what you read now.</p>
+                <ul>
+                    <li><b class="bold">Dont mix up the releases Debian has four branches:</b> These are old-stable(jessie), 
+                        stable(stretch), testing(buster)and unstable(sid). Important point in terms of 
+                        stability of Operating System is to have compatible softwares with each other. 
+                        If you mix up releases you will lose your stability and os will break eventually.</li>
+                    <li><b class="bold">Dont use drivers install script from outside.</b>You should always
+                    stick with driver that is released in repo. It generally covers drivers for all GPU hardware.
+                    If you install driver from outside source, it wont be compatible in next kernel update. 
+                        <ol>
+                           <li>These are Wiki page.</li>
+                           <li><a href="https://wiki.debian.org/AtiHowTo" target="_blank"><b class="bold">Ati HowTo</b></a></li>
+                           <li><a href="https://wiki.debian.org/ATIProprietary" target="_blank"><b class="bold">ATI Proprietary</b></a></li>
+                           <li><a href="https://wiki.debian.org/NvidiaGraphicsDrivers" target="_blank"><b class="bold">Nvidia</b></a></li>
+                        </ol>
+                    </li>
+                    <li>Try backports: Software is released under debian after long tests and bugfixes.
+                        Package can be old because of that. You can install more up to date packages with
+                        <b class="bold">-t stretch-backports</b> options.
+                        <ol>
+                            <li><a href="https://backports.debian.org/news/stretch-backports/" target="_blank"><b class="bold">Stretch backports</b></a></li>
+                        </ol>
+                    </li>
+                    <li><b class="bold">Configuring, installing packages manually is easy but:</b>You can install packages
+                    from source with configure, make, make install. But it will be hard to remove later on. You cannot do with 
+                    APT or synaptic. Better to sEvery Debian package installed on your system has a directory in /usr/share/doc tick with debian in that case.</li>
+                    <li>
+                        Read those.
+                        <ol>
+                            <li> <a href="https://www.debian.org/doc/" target="_blank">Debian documentation page</a></li>
+                            <li> <a href="https://debian-handbook.info/" target="_blank">Debian Administrator's Handbook:</a> </li>
+                            <li> The apropos command will help you find manual pages.</li>
+                            <li> The man command for reading the manual pages for commands you don't understand.</li>
+                            <li> Every Debian package installed on your system has a directory in /usr/share/doc </li>
+                        </ol>
+                    </li>
+                </ul>
+                <p><b class="bold">Apropos ls -> list all possible man pages</b></p>
+                <figure class="zoomable">
+                        <a href="./img/debianoutput1.png" data-lightbox="image"> 
+                        <img src="./img/debianoutput1.png"  alt="debian1"  class="node2"></a>
+                </figure>   
+                <p><b class="bold">man clnt_call</b></p>
+                <figure class="zoomable">
+                        <a href="./img/debianoutput2.png" data-lightbox="image"> 
+                        <img src="./img/debianoutput2.png"  alt="debian1"  class="node2"></a>
+                </figure>   
+            </div>
+        </div>
    
     </div>
    
@@ -1660,7 +1852,7 @@
     <link rel="stylesheet" href="https://code.jquery.com/ui/1.8.18/themes/base/jquery-ui.css" type="text/css" media="all" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 
-    <!-- First get JQuery -->
+    <!-- First get JQuery https://www.youtube.com/watch?v=7QlWpv958Uk-->
     <script src="./js/highlight.min.js" type="text/javascript"></script>
     <!-- Then get JQuery UI -->
     <script src="https://code.jquery.com/ui/1.8.18/jquery-ui.min.js"></script>

@@ -6,7 +6,10 @@ var obj = ['Web Dev Resources','Start working with canvas','Canvas project 2d we
 'JSON',"Container's size calculation", 'Msg','Specificity','Select2',
 'Box-sizing',
 'Page Life Cycle',
-'CSS Units' ];
+'CSS Units',
+'Take a screenshot of HTML Page, do AJAX call establishing connection with backend, Sen email with PHP',
+'NodeJS',
+'Suggestion for newcomers to the GNU/Linux Debian operating system' ];
 
 
 $( ".expandnarrow" ).each(function( index, element ) {

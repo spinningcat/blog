@@ -7,7 +7,9 @@ var obj = ['Web Dev Resources','Start working with canvas','Canvas project 2d we
 'Box-sizing',
 'Page Life Cycle',
 'CSS Units',
-'Take a screenshot of HTML Page, do AJAX call establishing connection with backend, Sen email with PHP','NodeJS' ];
+'Take a screenshot of HTML Page, do AJAX call establishing connection with backend, Sen email with PHP',
+'NodeJS',
+'Suggestion for newcomers to the GNU/Linux Debian operating system' ];
 
 
 $( ".expandnarrow" ).each(function( index, element ) {
