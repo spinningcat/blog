@@ -2094,10 +2094,60 @@ ionic serve
                 <p><b class="bold">man clnt_call</b></p>
                 <figure class="zoomable">
                         <a href="./img/debianoutput2.png" data-lightbox="image"> 
-                        <img src="./img/debianoutput2.png"  alt="debian1"  class="node2"></a>
+                        <img src="./img/debianouthttps://github.com/spinningcat/blog.gitput2.png"  alt="debian1"  class="node2"></a>
                 </figure>   
             </div>
         </div>
+        <div class="subContainer">
+                <ul>
+                    <li class="expandnarrow" id="24"><span></span> </li>
+                </ul>
+                <div class="blogDiv">
+        
+                    <p> <span class="firstcharacter">L</span>inux file/folder permission issue is really important
+                    matter that needs to be covered. There are some points i need to meantion about permissions. Briefly 
+                Linux has three user groups that are owner, group, other respectively. And Three kind of permissions exist
+                that are read, write, execute. In this article, i will give some details. That would be useful to you.</p>
+                    <p><b class="bold">Important Point: In case of developing web application, you should be careful about
+                        giving "write" permission. If you give write permission to group or others, you will probably see your files 
+                    are messed huge.</b></p>
+                    <p><b class="bold">Important Point:</b>If you set permission of folder with 777. Your system will be screwed soon. Because your operation 
+                        are open to anyone now.</p>
+                    <p><b class="bold">Important Point:</b>Each permission has stated with numbers.</p>
+                    <ul>
+                        <li>Read Permission: 4</li>
+                        <li>Write Permission: 2</li>
+                        <li>Execute Permission: 1</li>
+                    </ul>
+                    <p><b class="bold">At this point:</b>I will strongly suggest to type man chmod on console. Basic command would be</p>
+                    <div class="codeContainer">
+                            <div class="click">Select All -> Codes will be copited to clipboard </div>
+                            <hr class="seperator">
+                            <div class="content"> 
+                    <pre><code class="bash"> 
+chmod 751 file                        
+                    </code></pre>
+                    </div></div><div class="gap"></div>  
+ <p>As i said about there is three different users on linux. That are owner, group, others.
+     Let's briefly check what we did here.</p>  
+     <ul>
+         <li>We give read, write and execute folder to owner of file.</li>
+         <li>Whereas group can read file and execute the file. </li>
+         <li>Others can just execute the file.</li>
+    </ul>
+    <p><b class="bold">By the way:</b>Speaking of permission issue, it is one of permission measurement in linux. So use it wisely. </p>                             
+                    <p>In order to see permissions in spesific folder, use ls -l command.</p>
+                    <p>Examine this concept more. This is just ordinary example from console.</p>
+                    <ul>
+                        <li>drwxr-xr-x 1 ... ....  628 Oct 11 20:27 img</li>
+                        <li>d means directory.</li>
+                        <li>First three columns belongs to owner. Owner has read, write, execute permission.</li>
+                        <li>Second three columns belongs to group. Group has execute and read permissions as you see.</li>
+                        <li>Third three columns belongs to other. Other just have execute permissions.</li>
+
+                    </ul>
+                    </div>
+                    </div>
         </div>
     </div>
      

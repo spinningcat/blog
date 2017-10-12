@@ -8,7 +8,8 @@ var obj = ['Web Dev Resources','Start working with canvas','Canvas project 2d we
 'Page Life Cycle',
 'CSS Units',
 'Take a screenshot of HTML Page, do AJAX call establishing connection with backend, Sen email with PHP',
-'NodeJS',
+'NodeJS First Touch',
+"IONIC install and first step into android world",
 'Suggestion for newcomers to the GNU/Linux Debian operating system',
 'Linux File Permission' ];
 $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
