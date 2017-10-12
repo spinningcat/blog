@@ -11,31 +11,6 @@ var obj = ['Web Dev Resources','Start working with canvas','Canvas project 2d we
 'NodeJS',
 'Suggestion for newcomers to the GNU/Linux Debian operating system' ];
 $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
-
-function SelectText(element) {
-    var doc = document
-        , text = doc.getElementById(element)
-        , range, selection
-    ;    
-    if (doc.body.createTextRange) {
-        range = document.body.createTextRange();
-        range.moveToElementText(text);
-        range.select();
-    } else if (window.getSelection) {
-        selection = window.getSelection();        
-        range = document.createRange();
-        range.selectNodeContents(text);
-        selection.removeAllRanges();
-        selection.addRange(range);
-    }
-}
-
-document.onclick = function(e) {    
-    if (e.target.className === 'click') {
-        SelectText('thing');
-    }
-};
-
 $( ".expandnarrow" ).each(function( index, element ) {
    console.log(obj[index]);
    $(this).find('span').text( obj[index]);		
@@ -65,9 +40,24 @@ function SelectText(target) {
 }
 document.onclick = function(e) {    
     if (e.target.className === 'click') {
-        SelectText(e.target);
+       SelectText(e.target);
+       document.execCommand('copy');
+      
     }
 };
+$('.click').on('mouseenter', function(){
+   $('#detail').show();
+$( "#detail" ).tooltip({
+    position: {
+        my: "center bottom",
+        at: "center top-10",
+        collision: "flip",
+        using: function( position, feedback ) {
+            $( this ).addClass( feedback.vertical )
+                .css( position );
+        }
+    }
 });
-
+});
+});
 
