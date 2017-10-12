@@ -215,12 +215,18 @@
                                 anything inside it. because it isn't elements. Therefore, javascript must be your choice
                                 anyway. Speaking of giving id or class to element, it can be done like that. </p>
                             <p>
-     <pre><code class="canvas">
-     &lt;canvas id="canvas"&gt; 
-     &lt;/canvas&gt;
-     &lt;canvas class="canvas"&gt;
-     &lt;/canvas&gt;
-     </code></pre>
+                                <div class="codeContainer">
+                                    <div class="click">Select All</div>
+                                    <hr class="seperator">
+                                    <div class="content">                
+<pre><code class="canvas">
+&lt;canvas id="canvas"&gt; 
+&lt;/canvas&gt;
+&lt;canvas class="canvas"&gt;
+&lt;/canvas&gt;
+</code></pre>
+</div>
+</div>
 
 
 
@@ -231,12 +237,19 @@
                                     canvas element like below</p>
                            
                                 <p><b class="bold"> External Styling </b> </p>
-                                     <pre><code class="js">
-                                    .canvas{
-                                        width:500px;
-                                        height:500px;
-                                        }   
+                                <div class="codeContainer">
+                                    <div class="click">Select All</div>
+                                    <hr class="seperator">
+                                    <div class="content">
+                                     <pre><code class="css">
+.canvas{
+ width:500px;
+height:500px;
+}   
                                 </code></pre>
+                                </div>
+                                </div>
+                               
                                 <!-- Test -->
 
 
@@ -256,13 +269,16 @@
                                     First of all we need to grab the dom object. Look at below;
                                 </p>
                                 <div class="gap"></div>
-
+                                <div class="codeContainer">
+                                    <div class="click">Select All</div>
+                                    <div class="content">
                                 <pre><code class="javascript">
-                                     var canvas = document.querySelector('#canvas'); 
-                                     /* Remember: We use "#" for id, "." for class.
-                                    This principle is same as 
-                                    selecting element in css. */  
+var canvas = document.querySelector('#canvas'); 
+/* Remember: We use "#" for id, "." for class.
+This principle is same as selecting element in css. */  
                                 </code></pre>
+                                </div>
+                                </div>
     
 
                                 <div class="gap"></div>
@@ -274,14 +290,24 @@
                                 <p>
                                     With that selection, you have dom api, also you need to have canvas api to use canvas functionality. In this point, </p>
                                 <div class="gap"></div>
+                                <div class="codeContainer">
+                                        <div class="click">Select All</div>
+                                        <div class="content">
+                                <pre><code class="javascript">
+var canvas = document.querySelector("#canvas"); 
+// It is for using dom API. </code></pre>
+</div>
+</div>
 
-                                <pre><code class="javascript">var canvas = document.querySelector("#canvas"); 
-        // It is for using dom API. </code></pre>
+<div class="codeContainer">
+        <div class="click">Select All</div>
+        <div class="content">
 
-
-                                <pre><code class="javascript"> var ctx = canvas.getContenxt('2d'); 
-        // It is for using 2d canvas API. </code> </pre>
-
+                                <pre><code class="javascript"> 
+var ctx = canvas.getContenxt('2d'); 
+// It is for using 2d canvas API. </code> </pre>
+</div>
+</div>
                                 <ul>
                                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API" target="_blank"><b class="bold">Canvas API</b></a></li>
                                     <li><a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/getContext"
@@ -318,15 +344,21 @@
                                             values,with rgba values, with hex value, with hsv values or with hsl values.
                                         </p>
                                         <div class="gap"></div>
+                                        <div class="codeContainer">
+                                                <div class="click">Select All</div>
+                                                <hr class="seperator">
+                                                <div class="content">
 
                                         <pre><code class="javascript">
-      ctx.fillStyle = "blue"; 
-      ctx.fillStyle = "rbg(255, 192, 203)"; 
-      ctx.fillStyle = "rgba(255, 192, 203, 1)"; 
-      // Fourth parameter is just for setting opacity.
-      ctx.fillStyle = "#00FFFF"; 
-      ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
+ctx.fillStyle = "blue"; 
+ctx.fillStyle = "rbg(255, 192, 203)"; 
+ctx.fillStyle = "rgba(255, 192, 203, 1)"; 
+// Fourth parameter is just for setting opacity.
+ctx.fillStyle = "#00FFFF"; 
+ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
       </code></pre>
+      </div>
+      </div>
 
 
                                         <ul>
@@ -775,17 +807,22 @@
             <div class="blogDiv">
                 <p> <span class="firstcharacter">P</span>ug is HTML templating engine, primarily used in NodeJS. The way for
                     writing markup is new and innovative in pug and gives you some advantages over HTML. Let's look at example.</p>
-
+                    <div class="codeContainer">
+                            <div class="click">Select All</div>
+                            <hr class="seperator">
+                            <div class="content">
                 <pre><code class="html1">
-                &lt;div&gt;
-                  &lt;h1&gt; &lt;This is h1&gt; &lt;/h1&gt;
-                  &lt;ul&gt;
-                    &lt;li&gt;&lt;This is list item #1&gt; &lt;/li&gt;
-                    &lt;li&gt;&lt;This is list item #2&gt; &lt;/li&gt;
-                  &lt;/ul&gt;
-                &lt;/div&gt;
-                &lt;p&gt;&lt;This is ordinary paragraph.&gt;&lt;/p&gt;
+&lt;div&gt;
+&lt;h1&gt; &lt;This is h1&gt; &lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;This is list item #1&gt; &lt;/li&gt;
+&lt;li&gt;&lt;This is list item #2&gt; &lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+&lt;p&gt;&lt;This is ordinary paragraph.&gt;&lt;/p&gt;
                 </code></pre>
+                </div>
+                </div>
 
                 <p> Now I will demonstrate same thing with pug and I try to get your attention to some useful tools that are brought
                     to table by pug. I will use <a href="https://codepen.io/" target="_blank"><b class="bold">codepen.io</b></a>for that.</p>
@@ -932,18 +969,31 @@
             <div class="gap"></div>
             <p>Let me show you simple error. There is more you can sure of it. Assuming we are in the es5 environment. ES -> ECMAScript
                 </p>
+                <div class="codeContainer">
+                        <div class="click">Select All</div>
+                        <hr class="seperator">
+                        <div class="content">
             <pre><code class="javascript">
-      x = 2;
-      console.log(x); 
-      //You will see 2 on your console.
+x = 2;
+console.log(x); 
+//You will see 2 on your console.
       </code></pre>
+      </div>
+      </div>
             <div class="gap"></div>
             <p> What if we use these two lines of code with "use strict" </p>
+            <div class="codeContainer">
+                    <div class="click">Select All</div>
+                    <hr class="seperator">
+                    <div class="content">
+         
             <pre><code class="javascript">
-      "use strict" 
-      x = 2; 
-      console.log(x);
+"use strict" 
+x = 2; 
+console.log(x);
     </code></pre>
+    </div>
+    </div>
             <ul>
                 <li><a href="https://jsfiddle.net/hellyeah/6uvtd4tv/2/" target="_blank"><b class="bold"> 
         Now we check developer tools with f12. Assuming you are using chrome browser. Uncaught ReferenceError: x is not defined -> You should define x before.  
@@ -989,17 +1039,23 @@
             <div class="gap"></div>
 
             <p>You can define object in js like below</p>
+            <div class="codeContainer">
+                    <div class="click">Select All</div>
+                    <hr class="seperator">
+                    <div class="content">  
             <pre><code class="javascript">
-        var obj = {};
-        var obj = [{}] 
-        /* object inside array When you one of these you have 
-        an empty object. You can define those with some 
-        elements like below.*/
-        var obj = {"foo" : "bar"};
-        var obj = {"foo" : "bar", "bar", "zar"}; 
-        var obj = [{"foo" : "bar"}, {"bar" : "zar"}];
-        var obj = {"foo" : "bar", "foo", "zar"} 
+var obj = {};
+var obj = [{}] 
+/* object inside array When you one of these you have 
+an empty object. You can define those with some 
+elements like below.*/
+var obj = {"foo" : "bar"};
+var obj = {"foo" : "bar", "bar", "zar"}; 
+var obj = [{"foo" : "bar"}, {"bar" : "zar"}];
+var obj = {"foo" : "bar", "foo", "zar"} 
         </code></pre>
+        </div>
+        </div>
             <ul>
                 <li><a href="https://jsfiddle.net/6yz5o6tn/" target="_blank"><b class="bold">Second foo overrides the first one</b></a>                    </li>
             </ul>
@@ -1058,11 +1114,19 @@
                 it is or how small it is by focusing on the outer box's size. At the end of the article, i am 
                 gonna share nice example. Simple container definition can be done like that.
             </p>
-
-            <pre><code class="javascript">&lt;div class="container"&gt;</code></pre>
-            <pre><code class="javascript">&lt;div class="innerContainer"&gt;</code></pre>
-            <pre><code class="javascript">&lt;/div&gt; </code></pre>
-            <pre><code class="javascript">&lt; /div&gt;</code></pre>
+            <div class="codeContainer">
+                    <div class="click">Select All</div>
+                    <hr class="seperator">
+                    <div class="content">  
+           
+            <pre><code class="html">
+&lt;div class="container"&gt;
+&lt;div class="innerContainer"&gt;
+&lt;/div&gt; 
+&lt; /div&gt;
+            </code></pre>
+            </div>
+            </div>
 
             <p> As we said above everything in a web page is modeled as a box. And each box has some areas that have a part of
                 calculating actually size of the box.</p>
@@ -1352,28 +1416,40 @@
                 <p>It is a boolean value. Browser execute script asynchronously.</p><div class="grap"></div>
                 <p><b class="bold">Async</b></p>
                 <p>Script is executed before firing DOMContentLoaded</p><div class="grap"></div>
+                <div class="codeContainer">
+                        <div class="click">Select All</div>
+                        <hr class="seperator">
+                        <div class="content">  
                 <pre><code class="html">
-                      &gt;!doctype html&gt;
-                      &lt;html&gt;
-                      &lt;head%gt;
-                      &lt;title>Example&lt;/title&gt;
-                      &lt;/head&gt;
-                      &lt;body&gt;
-                      &lt;script src="ex.js" async &gt;&lt;/script&gt;
-                      &lt;img class="img" src="https://www.w3schools.com/css/img_fjords.jpg"&gt;
-                      &lt;/body&gt;
-                      &lt;/html&gt;
+&gt;!doctype html&gt;
+&lt;html&gt;
+&lt;head%gt;
+&lt;title>Example&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;script src="ex.js" async &gt;&lt;/script&gt;
+&lt;img class="img" src="https://www.w3schools.com/css/img_fjords.jpg"&gt;
+&lt;/body&gt;
+&lt;/html&gt;
                 </code></pre>
+                </div>
+                </div>
                      
                         <p><b class="bold">JavaScript</b></p>
+                        <div class="codeContainer">
+                                <div class="click">Select All</div>
+                                <hr class="seperator">
+                                <div class="content">  
                         <pre><code class="javascript">
-                        function ready() {
-                            console.log('DOM is ready');
-                            var img = img = document.querySelector("img");
-                            // image is not yet loaded (unless was cached), so the size is 0x0
-                            console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
-                     }document.addEventListener("DOMContentLoaded", ready);
+function ready() {
+console.log('DOM is ready');
+var img = img = document.querySelector("img");
+// image is not yet loaded (unless was cached), so the size is 0x0
+console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
+}document.addEventListener("DOMContentLoaded", ready);
                   </code></pre>
+                  </div>
+                  </div>
                 <p>
                     DOMContentLoader evvent triggers on document when dom is ready we can apply javascript
                     to elements at that time.
@@ -1480,55 +1556,66 @@
                         <p>Next thing you have to install composer so as to get latest version of PHPMailer.
                         Here is the steps for installing composer. By the way <a href="https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-debian-8" target="_blank"><b class="bold">compose</b></a> is PHP package manager.</p>
                         <p>HTML page is really simple just contains button and image.</p><div class="gap"></div>
+                        <div class="codeContainer">
+                                <div class="click">Select All</div>
+                                <hr class="seperator">
+                                <div class="content">  
                         <pre><code class="html">
-        &lt;!doctype html>
-        &lt;html&gt;
-        &lt;head&gt;&lt;/head&gt;
-        &lt;body&gt;
-        &lt;p&gt;&lt;button class="click"&gt;Send Email&lt;/button&gt;&lt;/p&gt;
-        &lt;img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Sample pic" /&gt;
-        &lt;script src="https://code.jquery.com/jquery-3.1.1.min.js"&gt;&lt;/script&gt;
-        &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js "&gt;
-        &lt;/script&gt;
-        &lt;script src="./script/calculation.js"&gt;&lt;/script&gt;
-        &lt;/body&gt;
-        &lt;html&gt;
+&lt;!doctype html>
+&lt;html&gt;
+&lt;head&gt;&lt;/head&gt;
+&lt;body&gt;
+&lt;p&gt;&lt;button class="click"&gt;Send Email&lt;/button&gt;&lt;/p&gt;
+&lt;img src="https://www.w3schools.com/css/img_fjords.jpg" alt="Sample pic" /&gt;
+&lt;script src="https://code.jquery.com/jquery-3.1.1.min.js"&gt;&lt;/script&gt;
+&lt;script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js "&gt;
+&lt;/script&gt;
+&lt;script src="./script/calculation.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;html&gt;
                                   
-                        </code></pre><div class="gap"></div>
+                        </code></pre>
+                        </div>
+                        </div>
+                        <div class="gap"></div>
                         <p>Javascript code seems a little complex but you will see what is going on with close look.
                            We are just getting screenshot of div we want "container" div in this case and send that as 
                            parameter to passittobackend function. Passittobackend function is just callback of click event. 
                            Click event is just triggered when you click button that has "mail" class. In passittobackend 
                            function we are doing ajax call.
                         </p><div class="gap"></div>
+                        <div class="codeContainer">
+                                <div class="click">Select All</div>
+                                <hr class="seperator">
+                                <div class="content">  
                         <pre><code class = "javascript">
-                         // this is for taking screenshot.
-                         window.takeScreenShot = function() {
-                         html2canvas(document.querySelector(".container"), {
-                         onrendered: function(canvas) {
-                        //document.body.appendChild(canvas);
-                        passittobackend(canvas);
-                         },
-                           });
-                         }
-                        $('.mail').on('click', function() {
-                            takeScreenShot();
-                             });
-                        function passittobackend(str){
-                             $.ajax({
-                            type: "POST",
-                            url:"mail.php",
-                            data: {"dataString" : str.toDataURL()},
-                            dataType: 'json',
-                             success: function(data){
-                                        return data;
-                            },
-                            fail: function(){
-                                      alert("fail");
-                            }
-                            });
-                         }
-                        </code></pre><div class="gap"></div>
+// this is for taking screenshot.
+window.takeScreenShot = function() {
+html2canvas(document.querySelector(".container"), {
+onrendered: function(canvas) {
+       //document.body.appendChild(canvas);
+       passittobackend(canvas);
+       },
+     });
+}
+$('.mail').on('click', function() {
+         takeScreenShot();
+});
+function passittobackend(str){
+        $.ajax({
+             type: "POST",
+             url:"mail.php",
+             data: {"dataString" : str.toDataURL()},
+             dataType: 'json',
+             success: function(data){
+                    return data;
+             },
+             fail: function(){
+                   alert("fail");
+             }
+    });
+}
+                        </code></pre></div></div><div class="gap"></div>
                         PHP part: If you look at the javascript code carefully you will see 
                             similarity with php. code. You can see similarity on that line <pre><code class="javascript"> data: {"dataString" : str.toDataURL()}</code></pre>
                             The data string is the index of <a href ="http://php.net/manual/tr/reserved.variables.post.php"><b class="bold">$_POST array</b></a>
@@ -1538,13 +1625,34 @@
                         <a href="https://developer.mozilla.org/en-US/docs/Web/API/HTMLCanvasElement/toDataURL" target="_blank"><b class="bold">ToDataURL </b> method.</a>
                         Width that method you will have a string like below. <div class="gap"></div>
                  
-                         We should require PHPMailer class  <pre><code class="php"> require_once "vendor/autoload.php";</code></pre> 
-                        then we need to have <pre><code class="php"> use PHPMailer\PHPMailer\PHPMailer;</code></pre><div class="gap"></div>
+                         We should require PHPMailer class
+                         <div class="codeContainer">
+                                <div class="click">Select All</div>
+                                <hr class="seperator">
+                                <div class="content">    
+                         <pre><code class="php"> 
+require_once "vendor/autoload.php";
+</code></pre> </div></div>
+                        then we need to have 
+                        <div class="codeContainer">
+                                <div class="click">Select All</div>
+                                <hr class="seperator">
+                                <div class="content">  
+                        <pre><code class="php"> 
+use PHPMailer\PHPMailer\PHPMailer;
+</code></pre></div></div><div class="gap"></div>
                                 <p><b class="bold">Additional Note about debugging PHP</b></p>
+                                <div class="codeContainer">
+                                        <div class="click">Select All</div>
+                                        <hr class="seperator">
+                                        <div class="content">  
                                 <pre><code class="php">
-                                        error_reporting(-1);
-                                        ini_set('display_errors', '1'); 
+error_reporting(-1);
+ini_set('display_errors', '1'); 
                               </code></pre>
+                              </div>
+                              </div>
+                              <div class="grap"></div>
                               <ul>
                                   <li>
                                     <a href="http://php.net/manual/tr/function.error-reporting.php" target="_blank"><b class="bold">function.error-reporting</b></a>
@@ -1557,8 +1665,12 @@
                                Then we will use <a href="http://php.net/manual/tr/function.base64-decode.php"><b class="bold">function.base64_decode </b></a> </p><div class="gap"></div>
                                <p>In the next step, we need to put file into directory because we will use that file as attachment later.
                                 Method that we use is <a href="http://php.net/manual/tr/function.file-put-contents.php"><b class="bold">function.file_put_contents </b></a></p><div class="gap"></div>
+                                <div class="codeContainer">
+                                        <div class="click">Select All</div>
+                                        <hr class="seperator">
+                                        <div class="content">  
                                 <pre><code class="php">
-          &lt;?php header('Content-Type: application/json');
+&lt;?php header('Content-Type: application/json');
         $stringData = $_POST["dataString"]; 
         require_once "vendor/autoload.php";
         error_reporting(-1); 
@@ -1572,41 +1684,42 @@
         // the true param means it will throw exceptions on errors, 
         which we need to catch $mail->IsSMTP(); 
         // telling the class to use SMTP try {
-          $mail->Host       = "mail.gmail.com"; 
-          // SMTP server
-          $mail->SMTPDebug  = 2;                     
-          // enables SMTP debug information (for testing)
-          $mail->SMTPAuth   = true;                  
-          // enable SMTP authentication
-          $mail->SMTPSecure = "ssl";                 
-          // sets the prefix to the servier
-          $mail->Host       = "smtp.gmail.com";      
-          // sets GMAIL as the SMTP server
-          $mail->Port       = 465;   // set the SMTP port for the GMAIL server
-          $mail->SMTPKeepAlive = true;
-          $mail->Mailer = "smtp";
-          $mail->Username   = "...@gmail.com";  
-          // GMAIL username
-          $mail->Password   = "...";            
-          // GMAIL password
-          $mail->AddAddress('...@gmail.com', 'abc');
-          $mail->addAttachment('.../image1.png');
-          $mail->SetFrom('....@gmail.com', 'def');
-          $mail->Subject = 'Ek';
-          $mail->AltBody = ''; 
-          $mail->MsgHTML("Ek");
-          $mail->Send();
-          echo "Message Sent OK \n";
-         //header("location: ../test.html");
+        $mail->Host       = "mail.gmail.com"; 
+        // SMTP server
+        $mail->SMTPDebug  = 2;                     
+        // enables SMTP debug information (for testing)
+        $mail->SMTPAuth   = true;                  
+        // enable SMTP authentication
+        $mail->SMTPSecure = "ssl";                 
+        // sets the prefix to the servier
+        $mail->Host       = "smtp.gmail.com";      
+        // sets GMAIL as the SMTP server
+        $mail->Port       = 465;   // set the SMTP port for the GMAIL server
+        $mail->SMTPKeepAlive = true;
+        $mail->Mailer = "smtp";
+        $mail->Username   = "...@gmail.com";  
+        // GMAIL username
+        $mail->Password   = "...";            
+        // GMAIL password
+        $mail->AddAddress('...@gmail.com', 'abc');
+        $mail->addAttachment('.../image1.png');
+        $mail->SetFrom('....@gmail.com', 'def');
+        $mail->Subject = 'Ek';
+        $mail->AltBody = ''; 
+        $mail->MsgHTML("Ek");
+        $mail->Send();
+        echo "Message Sent OK \n";
+        //header("location: ../test.html");
      } catch (phpmailerException $e) {
         echo $e->errorMessage(); 
         //Pretty error messages from PHPMailer
      } catch (Exception $e) {
          echo $e->getMessage(); 
          //Boring error messages from anything else!
-         }?&gt;      
+}?&gt;      
       
                         </code></pre>
+                        </div></div><div class="gap"></div>
                         <figure class="zoomable">
                                 <a href="./img/screenshot.png" data-lightbox="image"> 
                                  <img src="./img/screenshot.png"  alt="DOM" width="850" height="450" class="big"></a>
@@ -1673,6 +1786,10 @@
                                            
                                         </ol>
                                         <p><b class="bold">package.json</b></p>
+                                        <div class="codeContainer">
+                                                <div class="click">Select All</div>
+                                                <hr class="seperator">
+                                                <div class="content">  
                                         <pre><code class="nodejs">
 {
 "name": "simple",
@@ -1685,15 +1802,19 @@
 "author": "Berat Emre Nebioğlu",
 "license": "ISC"
 }
-                                          </code></pre>
+                                          </code></pre></div></div>
                                           <div class="gap"></div><p>Yay we have node project now. We can write javascript code. And it is interpreted in backend. </p>
                                           <p>So simple Javascript code will work in backend. Example is below.</p>
+                                          <div class="codeContainer">
+                                                <div class="click">Select All</div>
+                                                <hr class="seperator">
+                                                <div class="content">  
                                           <pre><code class="javascript">
 var arr = [1,2,3];
 arr.forEach(function(element,element){
         console.log(element);
 });
-                                          </code></pre><div class="gap"></div>
+                                          </code></pre></div></div><div class="gap"></div>
                                           <p><b class="bold">Type node index.js and see the result on console.</b></p>
                                           <figure class="zoomable">
                                                 <a href="./img/nodeoutput.png" data-lightbox="image"> 
@@ -1728,13 +1849,21 @@ arr.forEach(function(element,element){
                                                   <li>npm install  express --save-dev</li>
                                                   <li>if you dont use -g flag. You will see package.json is updated.</li>
                                               </ul>
+                                              <div class="codeContainer">
+                                                    <div class="click">Select All</div>
+                                                    <hr class="seperator">
+                                                    <div class="content">  
                                               <pre><code class="node">
 "devDependencies": {
     "express": "^4.16.2"
 }
-                                               </code></pre>
+                                               </code></pre></div></div><div class="gap"></div>
                                                <p><b class="bold">Creating HTTP Server and Serving in HTML</b></p>
                                                <p><b class="bold">HTML</b></p>
+                                               <div class="codeContainer">
+                                                    <div class="click">Select All</div>
+                                                    <hr class="seperator">
+                                                    <div class="content">  
                                                <pre><code class="html">
 &lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
@@ -1746,8 +1875,12 @@ arr.forEach(function(element,element){
 &lt;h1&gt;My App is alive!&gt;/h1&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-                                                 </code></pre>
+                                                 </code></pre></div></div><div class="gap"></div>
                                                  <p><b class="bold">NodeJS</b></p>
+                                                 <div class="codeContainer">
+                                                        <div class="click">Select All</div>
+                                                        <hr class="seperator">
+                                                        <div class="content">  
                                                  <pre><code class="javascript">
 // you need to include express first
 var express = require('express');
@@ -1762,7 +1895,7 @@ res.sendFile(__dirname + 'index.html');
 app.listen(8080);
 // send a message
 console.log('Server has started!');
-                                                </code></pre>
+                                                </code></pre></div></div><div class="gap"></div>
                                                 <p><b class="bold">Start HTTP Server -> nodemon index.js </b></p>    
                                                 <p><b class="bold">Result</b></p>
                                                 <figure class="zoomable">
@@ -1832,7 +1965,7 @@ console.log('Server has started!');
             </div>
         </div>
    
-    </div>
+    </div>      
    
    
   

@@ -1,3 +1,11 @@
+.seperator{
+  border:3px solid rgba(224, 185, 153, 0.397);
+}
+.content{
+  border:3px solid rgba(224, 185, 153, 0.397);
+  padding:10px;
+}
+
 .node{
 width:550px;
 height:150px;

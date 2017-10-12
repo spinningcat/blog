@@ -10,7 +10,31 @@ var obj = ['Web Dev Resources','Start working with canvas','Canvas project 2d we
 'Take a screenshot of HTML Page, do AJAX call establishing connection with backend, Sen email with PHP',
 'NodeJS',
 'Suggestion for newcomers to the GNU/Linux Debian operating system' ];
+$('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 
+function SelectText(element) {
+    var doc = document
+        , text = doc.getElementById(element)
+        , range, selection
+    ;    
+    if (doc.body.createTextRange) {
+        range = document.body.createTextRange();
+        range.moveToElementText(text);
+        range.select();
+    } else if (window.getSelection) {
+        selection = window.getSelection();        
+        range = document.createRange();
+        range.selectNodeContents(text);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+}
+
+document.onclick = function(e) {    
+    if (e.target.className === 'click') {
+        SelectText('thing');
+    }
+};
 
 $( ".expandnarrow" ).each(function( index, element ) {
    console.log(obj[index]);
@@ -21,5 +45,29 @@ $('.expandnarrow').on('click', function(){
 });
 $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 
-
+function SelectText(target) {
+    var doc = document
+        , text = $(target).parent().find('.content')[0]
+        , range, selection
+    ;
+    
+    if (doc.body.createTextRange) {
+        range = document.body.createTextRange();
+        range.moveToElementText(text);
+        range.select();
+    } else if (window.getSelection) {
+        selection = window.getSelection();        
+        range = document.createRange();
+        range.selectNodeContents(text);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    }
+}
+document.onclick = function(e) {    
+    if (e.target.className === 'click') {
+        SelectText(e.target);
+    }
+};
 });
+
+
