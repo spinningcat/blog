@@ -1721,7 +1721,7 @@ ini_set('display_errors', '1');
          //Boring error messages from anything else!
 }?&gt;      
       
-                        </code></pre>
+                        </code></pre>xcode-node 
                         </div></div><div class="gap"></div>
                         <figure class="zoomable">
                                 <a href="./img/screenshot.png" data-lightbox="image"> 
@@ -1838,7 +1838,7 @@ arr.forEach(function(element,element){
                                                   with nodeJS. NodeJS has many packages thats will fit your need. 
                                               </p>
                                               <p><b class="bold"> For more information:</b> npm search, use that command with package name such as 
-                                                  express that we take benefit from, to construct HTTP Server in a min. Also pay a visit to <a href="https://www.npmjs.com/" target="_black"><b class="bold">Node packages</b></a>
+                                                  express that we take benefit from, to construct HTTP Server in a min. Also pay a visit to <a href="https://www.npmjs.com/" target="_blank"><b class="bold">Node packages</b></a>
                                               </p>
                                              <p><b class="bold">Output</b></p>
                                              <figure class="zoomable">
@@ -1909,8 +1909,139 @@ console.log('Server has started!');
                                             </div>
     </div>
     <div class="subContainer">
+        <ul>
+            <li class="expandnarrow" id="21"><span></span> </li>
+        </ul>
+        <div class="blogDiv">
+
+                <p> <span class="firstcharacter">T</span>his article is written for collecting all necessary information
+                    to one place. I am debian buster(testing) user and i will show you the steps you need to follow to set your 
+                    environment ready for developing application with Ionic. This article focus on android side. Ionic 
+                    complain about missing xcodebuild which is library belongs to Mac. Anyway lets begin. 
+                 </p>
+                 <p><b class="bold">Important:</b>When you follow that steps. You are ready to develop android mobile app.</p>
+                 <p>We will need JDK. I prefer OracleJDK. Instruction is below.</p>
+                 <ul>
+                     <li><a href="http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html" target="_blank"><b class="bold">Download jdk 1.8 from oracle web site.</b></a></li>
+                     <li>Use su or sudo -c command to become root and create folder inside /opt with mkdir /opt/java-jdk. </li>
+                     <li>Extract your file with that command -> tar -C /opt/java-jdk -zxf jdk-9_linux-x64_bin.tar.gz</li>
+                     <li>Set your environment variable for JAVA and JAVAC</li>
+                    </ul><div class="gap"></div>
+                    <div class="codeContainer">
+                            <div class="click">Select All -> Codes will be copited to clipboard </div>
+                            <hr class="seperator">
+                            <div class="content"> 
+                    <pre><code class="bash"> 
+update-alternatives --install /usr/bin/java java /opt/java-jdk/jdk1.8.0_144/bin/java 1
+update-alternatives --install /usr/bin/java javac /opt/java-jdk/jdk1.8.0_144/bin/javac 1
+                    </code></pre>
+                    </div></div><div class="gap"></div>
+                    <p>You can check your environment variable with that command and set it.</p>
+                    <div class="codeContainer">
+                            <div class="click">Select All -> Codes will be copited to clipboard </div>
+                            <hr class="seperator">
+                            <div class="content"> 
+                    <pre><code class="bash"> 
+update-alternatives --config java
+                    </code></pre>
+                    </div></div><div class="gap"></div>
+                    <p><b class="bold">Important:</b>You can see version of Java and Javac with those commands. </p>
+                    <div class="codeContainer">
+                            <div class="click">Select All -> Codes will be copited to clipboard </div>
+                            <hr class="seperator">
+                            <div class="content"> 
+                    <pre><code class="bash"> 
+java --version
+javac --version
+                    </code></pre>
+                    </div></div><div class="gap"></div> 
+                    <p>We already dealt with Nodejs. So presumably you have npm (node package manager)</p>
+                 <ul>
+                     <li>First thing you are gonna do install cordova than install inonic.</li>
+                 </ul>
+                 <div class="codeContainer">
+                        <div class="click">Select All -> Codes will be copited to clipboard </div>
+                        <hr class="seperator">
+                        <div class="content"> 
+                <pre><code class="bash"> 
+npm install -g cordova
+npm install -g ionic
+                </code></pre>
+                </div></div><div class="gap"></div> 
+                <p> <b class="bold">Attention:</b>We will create ionic application now. </p>
+                <div class="codeContainer">
+                        <div class="click">Select All -> Codes will be copited to clipboard </div>
+                        <hr class="seperator">
+                        <div class="content"> 
+                <pre><code class="bash"> 
+ionic start todo blank --type ionic1
+                </code></pre>
+                </div></div><div class="gap"></div> 
+                <p><b class="bold">Dont forget:</b> Turn on telemetry before proceeding further.</p>
+                <div class="codeContainer">
+                        <div class="click">Select All -> Codes will be copited to clipboard </div>
+                        <hr class="seperator">
+                        <div class="content"> 
+                <pre><code class="bash"> 
+cordova telemetry on
+                </code></pre>
+                </div></div><div class="gap"></div>       
+                <p>Time to add android platform to our project.</p> 
+                <div class="codeContainer">
+                        <div class="click">Select All -> Codes will be copited to clipboard </div>
+                        <hr class="seperator">
+                        <div class="content"> 
+                <pre><code class="bash"> 
+ionic cordova platform add android
+                </code></pre>
+                </div></div><div class="gap"></div>   
+                <p>Before going further, i need to remind you. You will need to <a href="https://developer.android.com/studio/index.html" target="_blank"><b class="bold">install Android.</b></a></p>
+                <p><b class="bold">Don't Forget:</b>Put those lines into .bashrc file then close and open your terminal.</p>
+                <div class="codeContainer">
+                        <div class="click">Select All -> Codes will be copited to clipboard </div>
+                        <hr class="seperator">
+                        <div class="content"> 
+                <pre><code class="bash"> 
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export JAVA_HOME=/opt/java-jdk/jdk1.8.0_144/
+                </code></pre>
+                </div></div><div class="gap"></div>   
+                <p><b class="bold">Attention:</b>Install gradle if it is not installed on your system. You can check that with this command.</p>
+                <div class="codeContainer">
+                        <div class="click">Select All -> Codes will be copited to clipboard </div>
+                        <hr class="seperator">
+                        <div class="content"> 
+                <pre><code class="bash"> 
+apt-cache policy gradle
+                </code></pre>
+                </div></div><div class="gap"></div>  
+                <div class="codeContainer">
+                        <div class="click">Select All -> Codes will be copited to clipboard </div>
+                        <hr class="seperator">
+                        <div class="content">   
+                <p>In order to install gradle package.</p>
+                <pre><code class="bash"> 
+aptitude install gradle
+                </code></pre>
+                </div></div><div class="gap"></div>  
+                <p>You need few more commands before hitting the road of developing android application with Ionic.</p>
+                <div class="codeContainer">
+                        <div class="click">Select All -> Codes will be copited to clipboard </div>
+                        <hr class="seperator">
+                        <div class="content"> 
+                <pre><code class="bash"> 
+ionic cordova build android
+ionic cordova emulate android
+ionic serve
+                </code></pre>
+                </div></div><div class="gap"></div>    
+                <p>That's it !!!</p>    
+            </div>
+    </div>
+    <div class="subContainer">
             <ul>
-                <li class="expandnarrow" id="21"><span></span> </li>
+                <li class="expandnarrow" id="22"><span></span> </li>
             </ul>
             <div class="blogDiv">
     
@@ -1967,17 +2098,21 @@ console.log('Server has started!');
                 </figure>   
             </div>
         </div>
-   
-    </div>      
-   
-   
-  
-</div>
+        </div>
+    </div>
+     
+        
+    
+
+
 <div class="lineContainer">
         <hr class="line2">
     </div>
 </div>
-</dsiv>
+</div>
+
+
+
 
 
 

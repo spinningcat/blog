@@ -9,7 +9,8 @@ var obj = ['Web Dev Resources','Start working with canvas','Canvas project 2d we
 'CSS Units',
 'Take a screenshot of HTML Page, do AJAX call establishing connection with backend, Sen email with PHP',
 'NodeJS',
-'Suggestion for newcomers to the GNU/Linux Debian operating system' ];
+'Suggestion for newcomers to the GNU/Linux Debian operating system',
+'Linux File Permission' ];
 $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 $( ".expandnarrow" ).each(function( index, element ) {
    console.log(obj[index]);
@@ -45,19 +46,19 @@ document.onclick = function(e) {
       
     }
 };
-$('.click').on('mouseenter', function(){
-   $('#detail').show();
-$( "#detail" ).tooltip({
-    position: {
-        my: "center bottom",
-        at: "center top-10",
-        collision: "flip",
-        using: function( position, feedback ) {
-            $( this ).addClass( feedback.vertical )
-                .css( position );
+    $('.click').on('mouseenter', function(){
+    $('#detail').show();
+    $( "#detail" ).tooltip({
+        position: {
+            my: "center bottom",
+            at: "center top-10",
+            collision: "flip",
+            using: function( position, feedback ) {
+                $( this ).addClass( feedback.vertical )
+                    .css( position );
+            }
         }
-    }
-});
-});
+    });
+    });
 });
 
