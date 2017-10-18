@@ -1,3 +1,6 @@
+.hiding{
+  display:none;
+}
 dt:hover{
   text-decoration:underline;
   cursor:pointer;
@@ -321,6 +324,40 @@ height:250px;
           max-width:95vw;
           
     }
+    #container  .rightContainer .right .contentContainerRight  .categoryContainer html
+    {
+      display : flex;
+      flex-wrap : wrap;
+      flex-direction : column;
+      background-color: #F0F0F0;
+     word-wrap: wrap;
+      height:8em;
+      max-height:12em;
+      margin-top:1%;
+      padding-left:40px;
+      
+    }
+    dt {
+
+      display: list-item;
+      width:80%;  
+      list-style-type: square;
+      font-size:24px;
+      line-height:32px;
+    
+      
+      }
+  dd {
+      display: list-item;
+     width:80%;
+      list-style-type:circle;;
+      font-size:24px;
+      line-height:32px;
+      margin-left:15px;
+      overflow-wrap: break-word;
+     
+      
+      }
     ul li {
       margin:0;
       padding:0;
@@ -600,11 +637,11 @@ html, body {
       flex-wrap : wrap;
       flex-direction : column;
       
-      padding-left:30px;
-      padding-top:20px;
-      padding-top:20px;
+     
       margin-top:10px;;
       background-color: #F0F0F0;
+      padding-left:30px;
+      padding-top:20px;
       
     }
     dt {
@@ -612,12 +649,17 @@ html, body {
         list-style-type: square;
         font-size:24px;
         line-height:32px;
+      
+        
         }
     dd {
         display: list-item;
         list-style-type:circle;;
         font-size:24px;
         line-height:32px;
+        margin-left:15px;
+       
+        
         }
     #container .rightContainer .right .contentContainerRight .subContainer {
     
