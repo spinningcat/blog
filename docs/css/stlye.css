@@ -330,29 +330,32 @@ height:250px;
       flex-wrap : wrap;
       flex-direction : column;
       background-color: #F0F0F0;
-     word-wrap: wrap;
+     
       height:8em;
-      max-height:12em;
-      margin-top:1%;
-      padding-left:40px;
+     
+      margin-top:3%;
+     
       
     }
     dt {
 
       display: list-item;
-      width:80%;  
+      
       list-style-type: square;
+      margin-left:25px;
+      margin-top:2%;
     
     
       
       }
   dd {
       display: list-item;
-     width:80%;
-      list-style-type:circle;;
      
-      margin-left:15px;
-      overflow-wrap: break-word;
+      list-style-type:circle;;
+      margin-left:45px;
+      overflow:hidden;
+     
+      
      
       
       }
