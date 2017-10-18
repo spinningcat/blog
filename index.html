@@ -20,7 +20,14 @@
 </head>
 
 <body>
-    <div id="detail">Code will be copied to clipboard after clicking "Select All" button.</div>
+        <script id="myTemplate" type="text/x-handlebars-template">
+            
+              <dl>
+                <dt></dt>
+                <dd></dd>
+              </dl>
+            </script>
+   
     <div id="container">
         <div class="leftContainer">
             <div class="left">
@@ -66,7 +73,16 @@
                 </div>
                
                 <div class="contentContainerRight">
-                        <div class="subContainer">
+                            <div class="arrowContainer hiding">
+                                <img src="./img/arrow.png" alt="arrow" class="arrow" />
+                            </div>
+                            <div class="categoryContainer">
+                            
+                            </div>
+                            <div class="titleContainer hiding">
+
+                            </div>
+                        <div class="subContainer hiding" data="WebGeneral">
                                 <ul>
                                     <li class="expandnarrow" id="0"><span></span> </li>
                                 </ul>
@@ -100,7 +116,7 @@
                                         <ul>
                                             <li><a href="https://jsfiddle.net/" target="_blank"><b class="bold">JsFiddle</b></a></li>
                                             <li><a href="https://codepen.io/" target="_blank"><b class="bold">Codepen.io</b></a></li>
-                                            <li><a href="https://plnkr.co/" target="_blank"><b class="bold">Plunker</b></a></li>
+                                            <li><a href="https://plnkr.co/" target="_blank"><b class="bold">Plunker</b></a></li>/
                                             <li><a href="https://ideone.com/" target="_blank"><b class="bold">Ideone</b></a></li>
                                             <li><a href="https://dotnetfiddle.net/" target="_blank"><b class="bold">DotnetFiddle</b></a></li>
                                             <li><a href="http://sqlfiddle.com/" target="_blank"><b class="bold">SQLFiddle</b></a></li>
@@ -204,7 +220,7 @@
                                 </div>
                             </div>
 
-                    <div class="subContainer">
+                    <div class="subContainer hiding" data="FrontEnd">
                         <ul>
                             <li class="expandnarrow" id="1"><span></span> </li>
                         </ul>
@@ -378,23 +394,23 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
                                         </p>
                         </div>
                     </div>
-                    <div class="subContainer">
-                            <ul>
-                                <li class="expandnarrow" id="2"><span></span> </li>
-                            </ul>
-                            <div class="blogDiv">
-                                </div>
-                                </div>
-                                <div class="subContainer">
-                                        <ul>
-                                            <li class="expandnarrow" id="3"><span></span> </li>
-                                        </ul>
-                                        <div class="blogDiv">
-                                            </div>
-                                            </div>
-                    <div class="subContainer">
+                    <div class="subContainer hiding" data="ToolForDeploymentSoftware" >
+                        <ul>
+                            <li class="expandnarrow"  id="2"><span></span> </li>
+                        </ul>
+                        <div class="blogDiv">
+                            </div>
+                            </div>
+                            <div class="subContainer hiding" data="ToolForDeploymentSoftware">
+                                    <ul>
+                                        <li class="expandnarrow" id="3"><span></span> </li>
+                                    </ul>
+                                    <div class="blogDiv">
+                                        </div>
+                                        </div>
+                    <div class="subContainer hiding">
                         <ul>    
-                            <li class="expandnarrow" id="4"><span></span> </li>
+                            <li class="expandnarrow" data="FrontEnd" id="4"><span></span> </li>
                         </ul>
                         <div class="blogDiv">
                                 <p> <span class="firstcharacter">I</span>n this project, i am working with
@@ -404,7 +420,7 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
                                 </p>
                             </div>
                             </div>
-                    <div class="subContainer">
+                    <div class="subContainer hiding" data="FrontEnd">
                         <ul>    
                             <li class="expandnarrow" id="5"><span></span> </li>
                         </ul>
@@ -534,7 +550,7 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
 
                         </div>
                     </div>
-                    <div class="subContainer">
+                    <div class="subContainer hiding" data="Frontend">
                         <ul>
                             <li class="expandnarrow" id="6"><span></span> </li>
                         </ul>
@@ -569,7 +585,7 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
                         </ul>
                     </div>
                 </div>
-                <div class="subContainer">
+                <div class="subContainer hiding" data="WebGeneral">
                     <ul>
                         <li class="expandnarrow" id="5"><span></span> </li>
                     </ul>
@@ -584,9 +600,9 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
                             </p>
                         <div class="gap"></div>
                         <p>
-                            Think about  dom structure. It is actually a tree. Simplest dom would be like container(root) -> subContainer(child) ->
+                            Think about  dom structure. It is actually a tree. Simplest dom would be like container(root) -> subContainer (child) ->
                             text(leaf). text is a leaf in this case because text element doesn't have a child. You can have more complicated dom structure for sure. Point is flex-direction, justify-content, align-items
-                            will state the place of subContainer. I put a border to each of container for debugging purpose.
+                            will state the place of subContainer . I put a border to each of container for debugging purpose.
                             Hopefully it will be easier to understand for you with that borders.
                         </p>
                         <div class="gap"></div>
@@ -637,7 +653,7 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
                     </div>
                 </div>
 
-                <div class="subContainer">
+                <div class="subContainer hiding" data= "Editorial">
                     <ul>
                         <li class="expandnarrow" id="7"><span></span> </li>
                     </ul>
@@ -761,7 +777,7 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
                     </ul>
                 </div>
             </div>
-            <div class="subContainer">
+            <div class="subContainer hiding" data="FrontEnd">
                 <ul>
                     <li class="expandnarrow" id="8"><span></span> </li>
                 </ul>
@@ -817,7 +833,7 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
 
 
 
-        <div class="subContainer">
+        <div class="subContainer hiding" data="FrontEnd">
             <ul>
                 <li class="expandnarrow" id="9"><span></span> </li>
             </ul>
@@ -907,7 +923,7 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
 
             </div>  
         </div>
-        <div class="subContainer">
+        <div class="subContainer hiding" data="FrontEnd">
             <ul>
                 <li class="expandnarrow" id="10"><span></span> </li>
             </ul>
@@ -975,7 +991,7 @@ ctx.fillStyle = 'hsl('+h+', 100%, 50%)';
 
         </div>
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding" data="FrontEnd">
         <ul>
             <li class="expandnarrow" id="11"><span></span> </li>
         </ul>
@@ -1042,13 +1058,13 @@ console.log(x);
         </ul>
     </div>
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding" data="FrontEnd">
         <ul>
             <li class="expandnarrow" id="12"> <span></span> </li>
         </ul>
         <div class="blogDiv">
 
-            <p><span class="firstcharacter">J</span>is an initialism of JavaScript Object Notation. It is 
+            <p><span class="firstcharacter">J</span>SON is an initialism of JavaScript Object Notation. It is 
                 special data structure we use, generally for establishing a connection between
                  frontend and backend with AJAX that is illustrated here just after some moments. 
                  First, in order to clarify JSON in your mind, you can think as dictionary 
@@ -1119,7 +1135,7 @@ var obj = {"foo" : "bar", "foo", "zar"}
 
         </div>
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding" data="WebGeneral">
         <ul>
             <li class="expandnarrow" id="13"><span></span> </li>
         </ul>
@@ -1171,7 +1187,7 @@ var obj = {"foo" : "bar", "foo", "zar"}
                 <p> <a href="https://jsfiddle.net/hellyeah/6dbyL6ut/1/" target="_blank"><b class="bold">Example with animation</b></a>                    </p>
         </div>
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding" data="NewTech">
         <ul>
             <li class="expandnarrow" id="14"><span></span> </li>
         </ul>
@@ -1276,9 +1292,9 @@ var obj = {"foo" : "bar", "foo", "zar"}
         </div>
 
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding">
         <ul>
-            <li class="expandnarrow" id="15"><span></span> </li>
+            <li class="expandnarrow" data="WebGeneral" id="15"><span></span> </li>
         </ul>
         <div class="blogDiv">
 
@@ -1329,9 +1345,9 @@ var obj = {"foo" : "bar", "foo", "zar"}
         </ul>
     </div>
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding">
         <ul>
-            <li class="expandnarrow" id="16"><span></span> </li>
+            <li class="expandnarrow" data="NewTech" id="16"><span></span> </li>
         </ul>
         <div class="blogDiv">
             <p><span class="firstcharacter"> S </span>elect2 is the jQuery replacement for selecbox. Select2 gives you a customizable
@@ -1382,9 +1398,9 @@ var obj = {"foo" : "bar", "foo", "zar"}
             </ul>
     </div>
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding">
         <ul>
-            <li class="expandnarrow" id="17"><span></span> </li>
+            <li class="expandnarrow" data="WebGeneral" id="17"><span></span> </li>
         </ul>
         <div class="blogDiv">
             <p>
@@ -1403,9 +1419,9 @@ var obj = {"foo" : "bar", "foo", "zar"}
         </div>
 
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding">
         <ul>
-            <li class="expandnarrow" id="18"><span></span> </li>
+            <li class="expandnarrow" data="Frontend" id="18"><span></span> </li>
         </ul>
         <div class="blogDiv">
                 <p><span class="firstcharacter"> D </span>OMContentLoaded event is fired when html document is completely 
@@ -1480,7 +1496,7 @@ console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
                 </figure>
         </div>
         </div>
-        <div class="subContainer">
+        <div class="subContainer hiding" data="WebGeneral">
             <ul>
                 <li class="expandnarrow" id="19"><span></span> </li>
             </ul>
@@ -1496,7 +1512,7 @@ console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
             <p><b class="bold">%</b></p>
             <ul>
                     <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/9/embedded/result/"><b class="bold">% unit</b></a></li>
-                        <li> As you see subcontainer just get the 80% space of container.</li>
+                        <li> As you see subContainer  just get the 80% space of container.</li>
                            
             </ul>
             <p><b class="bold">ch</b></p>
@@ -1519,14 +1535,14 @@ console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
                  <p><b class="bold">vw</b></p>
                  <ul>
                          <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/16/embedded/result"><b class="bold">vw unit</b></a></li>
-                         <li> In this example subContainer takes 20% space of container. So 1vw is like 1% width of container.</li>
+                         <li> In this example subContainer  takes 20% space of container. So 1vw is like 1% width of container.</li>
                                             
      
                      </ul>
                      <p><b class="bold">vh</b></p>
                      <ul>
                              <li> <a href="https://jsfiddle.net/hellyeah/d2dsrodd/15/embedded/result"><b class="bold">vh unit</b></a></li>
-                             <li> In this example subContainer takes 20% space of container. So 1vh is like 1% width of container.</li>
+                             <li> In this example subContainer  takes 20% space of container. So 1vh is like 1% width of container.</li>
                                                 
          
                          </ul>
@@ -1554,7 +1570,7 @@ console.log(`Image size: ${img.offsetWidth}x${img.offsetHeight}`);
                  <p>Additional content will be added soon.</p>
                 </div>
                 </div>
-                <div class="subContainer">
+                <div class="subContainer hiding" daata="BackEnd">
                     <ul>
                         <li class="expandnarrow" id="20"><span></span> </li>
                     </ul>
@@ -1743,7 +1759,7 @@ ini_set('display_errors', '1');
                         </figure>
                         </div>    
                         </div>
-                        <div class="subContainer">
+                        <div class="subContainer hiding" data="BackEnd">
                                 <ul>
                                     <li class="expandnarrow" id="21"><span></span> </li>
                                 </ul>
@@ -1922,7 +1938,7 @@ console.log('Server has started!');
 
                                             </div>
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding" data="Mobile">
         <ul>
             <li class="expandnarrow" id="22"><span></span> </li>
         </ul>
@@ -2053,7 +2069,7 @@ ionic serve
                 <p>That's it !!!</p>    
             </div>
     </div>
-    <div class="subContainer">
+    <div class="subContainer hiding" data="Mobile">
             <ul>
                 <li class="expandnarrow" id="23"><span></span> </li>
             </ul>
@@ -2064,7 +2080,7 @@ ionic serve
                         </p>
                         </div>
                         </div>
-    <div class="subContainer">
+    <div class="subContainer hiding" data="OperatingSystems">
             <ul>
                 <li class="expandnarrow" id="24"><span></span> </li>
             </ul>
@@ -2123,7 +2139,7 @@ ionic serve
                 </figure>   
             </div>
         </div>
-        <div class="subContainer">
+        <div class="subContainer hiding" data="OperatingSystems">
                 <ul>
                     <li class="expandnarrow" id="25"><span></span> </li>
                 </ul>
@@ -2173,7 +2189,7 @@ chmod 751 file
                     </ul>
                     </div>
                     </div>
-                    <div class="subContainer">
+                    <div class="subContainer hiding" data="SoftwareGeneral">
                             <ul>
                                 <li class="expandnarrow" id="26"><span></span> </li>
                             </ul>
@@ -2210,6 +2226,8 @@ chmod 751 file
     <!-- Then get JQuery UI -->
     <script src="http://code.jquery.com/ui/1.11.2/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript"></script>
+    <script src="https://cdn.rawgit.com/jprichardson/string.js/master/dist/string.min.js"></script>
+    
     <script src="./js/myscript.js"></script>
 
 </body>
