@@ -89,7 +89,9 @@ height:250px;
 
 .expandnarrow span
 {   
-	line-height:24px;
+  font-size:24px;
+  line-height:32px;
+  font-weight:bold;
 
 }
 .mobidictum{
@@ -347,21 +349,23 @@ height:250px;
     }
     dt {
 
-      display: list-item;
-      
-      list-style-type: square;
+      font-weight: bold;
       margin-left:25px;
       margin-top:2%;
+      font-size:24px;
+      line-height:32px;
     
     
       
       }
   dd {
-      display: list-item;
+   
      
-      list-style-type:circle;;
+    
       margin-left:45px;
-      overflow:hidden;
+      font-size:24px;
+      line-height:32px;
+      
      
       
      
@@ -381,7 +385,7 @@ height:250px;
     ul {
       width: 100%;
       background-color: #F0F0F0;
-      list-style: square;
+      
     }
     ol li {
       padding: 8px;
@@ -398,9 +402,7 @@ height:250px;
       background-color: #F0F0F0;
       list-style: square;
     }
-    .blogDiv ul{
-      list-style:none;
-    }
+    
      
     a:hover {
       box-shadow: none !important;
@@ -654,17 +656,18 @@ html, body {
       
     }
     dt {
-        display: list-item;
-        list-style-type: square;
+  
+      
+        font-weight:bold;
         font-size:24px;
         line-height:32px;
       
         
         }
     dd {
-        display: list-item;
-        list-style-type:circle;;
-        font-size:24px;
+        
+       
+        font-size:16px;
         line-height:32px;
         margin-left:15px;
        
@@ -737,7 +740,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+    
   }
   ol li {
     padding: 8px;
@@ -752,7 +755,7 @@ html, body {
   ol {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+   
   }
   .blogDiv ul{
     list-style:none;
@@ -1051,7 +1054,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+   
   }
   ol li {
     padding: 8px;
@@ -1112,7 +1115,7 @@ html, body {
 .arrowContainer{
  position:fixed;
  margin-top:30px;
-  margin-left:-100px;
+ margin-left:-70px; 
  
 }
 .firstcharacter {
