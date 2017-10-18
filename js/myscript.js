@@ -29,7 +29,16 @@ var obj = ['Web Dev Resources','Start working with canvas','Git Extras','Git Ann
 'React Native',
 'Suggestion for newcomers to the GNU/Linux Debian operating system',
 'Linux File Permission',
-'Software Design Pattern' ];
+'Naming Convention',
+'Type of Language',
+'Software Design Pattern - Singeleton Pattern',
+'Software Design Pattern - Dependency Injection',
+'Software Design Pattern - MVC',
+'Software Design Pattern - MVVM',
+'First Touch to Unity',
+'Node String Package',
+'MonetJS',
+'LightBox' ];
 var template;
 var myTemplate = document.querySelector('#myTemplate');
 
