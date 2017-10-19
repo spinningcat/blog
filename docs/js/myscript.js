@@ -1,4 +1,20 @@
 $(function(){
+    var titles = {
+        'Operating Systems': 'Tip and tricks for GNU/Linux users',
+        'Software General': 'General software topics like software design pattern, naming convention, static type, dynamic type? etc.',
+        'Web General': 'The area to discuss some spesific matters ',
+        'FrontEnd': 'CSS, Javascript, jQuery and/or some frameworks',
+        'JavaScript/jQuery': 'Small Javascript and jQuery Examples',
+        'BackEnd': 'Examples',
+        'Editorial': 'Possible options for editting',
+        'Useful Node Packages': 'Short Examples with Handy Node Packages',
+        'Useful JavaScript Libraries' : 'Some External Libraries You want to take a look at',
+        'New Tech': 'Developments that need to be discovered',
+        'Mobile': 'Ionic, React Native brief mobile development',
+        'Unity': 'Unity development',
+        'Tool For Deployment Software' : 'Git, SVN ',
+        'Projects': 'Partial telling about project with some code samples'
+      };
 var obj = ['Web Dev Resources','Start working with canvas','Git Extras','Git Annex',
 'Canvas project 2d web based game','Working swith flexbox - Basic'
 , 'Fux and Grid Design','A real world example with flexbox', 'Markdown Syntax', 
@@ -14,7 +30,35 @@ var obj = ['Web Dev Resources','Start working with canvas','Git Extras','Git Ann
 'React Native',
 'Suggestion for newcomers to the GNU/Linux Debian operating system',
 'Linux File Permission',
-'Software Design Pattern' ];
+'Naming Convention',
+'Type of Language - Static or Dynamic',
+'Software Design Pattern - Factory Pattern',
+'Software Design Pattern - Structural Pattern',
+'Software Design Pattern - Singeleton Pattern',
+'Software Design Pattern - Dependency Injection',
+'Software Design Pattern - MVC',
+'Software Design Pattern - MVVM',
+'First Touch to Unity',
+'Node String Package',
+'MonetJS',
+'LightBox',
+'LetteringJS',
+'TexillateJS',
+'Latex - Introduction',
+'Latex - Beamer',
+'GIT -Introduction' ];
+var template;
+var myTemplate = document.querySelector('#myTemplate');
+
+var categoryContainer = document.querySelector('.categoryContainer');
+var htmlTemplate = myTemplate.innerHTML;
+var htmlPart = document.createElement('div');
+htmlPart.setAttribute('class', 'categoryContainer');
+htmlPart.innerHTML = htmlTemplate;
+
+
+//var dt = categoryContainer.querySelector('dl');
+
 $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 $( ".expandnarrow" ).each(function( index, element ) {
    console.log(obj[index]);
@@ -64,5 +108,63 @@ document.onclick = function(e) {
         }
     });
     });
+   
+    
+
+    
+    function constructPartialMarkup() {
+        
+      var parser = new DOMParser;
+      for (var items in titles) {
+                 template = parser.parseFromString(htmlTemplate, "text/html");
+           
+           template.querySelector('dt').setAttribute('class', S(items).strip(' ', '_', '-').s);
+           template.querySelector('dt').innerHTML = items;
+           template.querySelector('dt').addEventListener('click',
+           appendArticlesToDiv);
+           template.querySelector('dd').innerHTML = titles[items];
+           categoryContainer.appendChild(template.firstChild);
+      }
+    }
+    constructPartialMarkup();
+    var subContainer = document.querySelectorAll('.subContainer');
+   
+    var titleContainer = document.querySelector('.titleContainer');
+    var titleSub = document.querySelectorAll('.titleContainer .subContainer');
+    var arrowContainer = document.querySelector('.arrowContainer');
+    
+    var dt = document.querySelectorAll('.categoryContainer dt');
+    var classAttr;
+    function appendArticlesToDiv(){
+        
+        categoryContainer.classList.add('hiding');
+        titleContainer.classList.remove('hiding');
+        classAttr = this.getAttribute('class');
+     
+       
+      
+        subContainer.forEach(function(element, index){
+           
+            if(classAttr === element.getAttribute('data')){
+                titleContainer.appendChild(element);
+             }
+        });
+        $(titleContainer).find(subContainer).removeClass('hiding');
+        arrowContainer.classList.remove('hiding');
+    
+        
+        
+       
+       
+    }
+    arrowContainer.addEventListener('click', function(){
+        arrowContainer.classList.add('hiding');
+        titleContainer.classList.add('hiding');
+        categoryContainer.classList.remove('hiding');
+        titleContainer.innerHTML = '';
+    });
+   
 });
+
+
 

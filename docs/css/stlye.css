@@ -1,3 +1,8 @@
+dt:hover{
+  text-decoration:underline;
+  cursor:pointer;
+}
+
 .ui-tooltip {
   width: 200px;
   text-align: center;
@@ -81,8 +86,12 @@ height:250px;
 
 .expandnarrow span
 {   
-	line-height:24px;
-
+  font-size:24px;
+	line-height:32px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  padding-right:10px;
 }
 .mobidictum{
   width:40px;
@@ -273,7 +282,7 @@ height:250px;
        
        width:80vw;
       max-width:80vw;
-      padding:10px;
+      padding:10px; 
       }
       #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:hover {
           -webkit-filter: grayscale(1);
@@ -589,6 +598,33 @@ html, body {
    
   
     }
+    #container  .rightContainer .right .contentContainerRight  .categoryContainer html
+    {
+      display : flex;
+      flex-wrap : wrap;
+      flex-direction : column;
+      
+      padding-left:30px;
+      padding-top:20px;
+      padding-top:20px;
+      margin-top:10px;;
+      background-color: #F0F0F0;
+      
+    }
+    dt {
+        font-size: bold;
+        font-size:26px;
+        line-height:32px;
+        }
+    dd {
+      
+        font-size:16px;
+        line-height:32px;
+        padding-left:30px;
+        padding-right:30px;
+        padding-top:10px;
+        padding-bottom:10px;
+        }
     #container .rightContainer .right .contentContainerRight .subContainer {
     
       width:90%;
@@ -656,7 +692,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+   
   }
   ol li {
     padding: 8px;
@@ -671,7 +707,7 @@ html, body {
   ol {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+   
   }
   .blogDiv ul{
     list-style:none;
@@ -867,11 +903,11 @@ html, body {
       width:200px;
       opacity:1;
    }
-    img{
+    /*img{
       
       height:300px;
       width:500px;
-    }
+    }*/
     #container .rightContainer .right .contentContainerTop .header .textContainer {
     width : 85%;
     max-width:85%;
@@ -884,6 +920,7 @@ html, body {
     
       }
     #container  .rightContainer .right .contentContainerRight {
+     
     display : flex;
     flex-wrap : wrap;
     flex-direction : column;
@@ -930,6 +967,9 @@ html, body {
       box-shadow : 0 10px 3px #B0A5A5;
       cursor : pointer;
       }
+#container .right .contentContainerRight .subContainer{
+      
+} 
   
   #container .right .contentContainerRight .subContainer .blogDiv {
         display : none;
@@ -966,7 +1006,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+  
   }
   ol li {
     padding: 8px;
@@ -981,7 +1021,7 @@ html, body {
   ol {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+  
   }
   .blogDiv ul{
     list-style:none;
@@ -1021,6 +1061,15 @@ html, body {
     a:hover{
        box-shadow: 6px 8px 12px rgba(0, 0, 0, 0.20);
     }
+    .hiding{
+      display:none;
+    }
+.arrowContainer{
+ position:fixed;
+ margin-top:30px;
+  margin-left:-90px;
+ 
+}
 .firstcharacter {
   color: rgba(0, 0, 0, 0.61);
   float: left;

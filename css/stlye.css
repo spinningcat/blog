@@ -86,8 +86,12 @@ height:250px;
 
 .expandnarrow span
 {   
-	line-height:24px;
-
+  font-size:24px;
+	line-height:32px;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left:10px;
+  padding-right:10px;
 }
 .mobidictum{
   width:40px;
@@ -608,16 +612,18 @@ html, body {
       
     }
     dt {
-        display: list-item;
-        list-style-type: square;
-        font-size:24px;
+        font-size: bold;
+        font-size:26px;
         line-height:32px;
         }
     dd {
-        display: list-item;
-        list-style-type:circle;;
-        font-size:24px;
+      
+        font-size:16px;
         line-height:32px;
+        padding-left:30px;
+        padding-right:30px;
+        padding-top:10px;
+        padding-bottom:10px;
         }
     #container .rightContainer .right .contentContainerRight .subContainer {
     
@@ -686,7 +692,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+   
   }
   ol li {
     padding: 8px;
@@ -701,7 +707,7 @@ html, body {
   ol {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+   
   }
   .blogDiv ul{
     list-style:none;
@@ -1000,7 +1006,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+  
   }
   ol li {
     padding: 8px;
@@ -1015,7 +1021,7 @@ html, body {
   ol {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+  
   }
   .blogDiv ul{
     list-style:none;

@@ -4,7 +4,8 @@ $(function(){
         'Software General': 'General software topics like software design pattern, naming convention, static type, dynamic type? etc.',
         'Web General': 'The area to discuss some spesific matters ',
         'FrontEnd': 'CSS, Javascript, jQuery and/or some frameworks',
-        'Backend': 'Examples',
+        'JavaScript/jQuery': 'Small Javascript and jQuery Examples',
+        'BackEnd': 'Examples',
         'Editorial': 'Possible options for editting',
         'Useful Node Packages': 'Short Examples with Handy Node Packages',
         'Useful JavaScript Libraries' : 'Some External Libraries You want to take a look at',
@@ -29,9 +30,26 @@ var obj = ['Web Dev Resources','Start working with canvas','Git Extras','Git Ann
 'React Native',
 'Suggestion for newcomers to the GNU/Linux Debian operating system',
 'Linux File Permission',
-'Software Design Pattern' ];
+'Naming Convention',
+'Type of Language - Static or Dynamic',
+'Software Design Pattern - Factory Pattern',
+'Software Design Pattern - Structural Pattern',
+'Software Design Pattern - Singeleton Pattern',
+'Software Design Pattern - Dependency Injection',
+'Software Design Pattern - MVC',
+'Software Design Pattern - MVVM',
+'First Touch to Unity',
+'Node String Package',
+'MonetJS',
+'LightBox',
+'LetteringJS',
+'TexillateJS',
+'Latex - Introduction',
+'Latex - Beamer',
+'GIT -Introduction' ];
 var template;
 var myTemplate = document.querySelector('#myTemplate');
+
 var categoryContainer = document.querySelector('.categoryContainer');
 var htmlTemplate = myTemplate.innerHTML;
 var htmlPart = document.createElement('div');
@@ -40,6 +58,7 @@ htmlPart.innerHTML = htmlTemplate;
 
 
 //var dt = categoryContainer.querySelector('dl');
+
 $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 $( ".expandnarrow" ).each(function( index, element ) {
    console.log(obj[index]);
@@ -118,7 +137,7 @@ document.onclick = function(e) {
     var classAttr;
     function appendArticlesToDiv(){
         
-        categoryContainer.style.display = 'none';
+        categoryContainer.classList.add('hiding');
         titleContainer.classList.remove('hiding');
         classAttr = this.getAttribute('class');
      
@@ -132,11 +151,20 @@ document.onclick = function(e) {
         });
         $(titleContainer).find(subContainer).removeClass('hiding');
         arrowContainer.classList.remove('hiding');
+    
         
         
        
        
     }
+    arrowContainer.addEventListener('click', function(){
+        arrowContainer.classList.add('hiding');
+        titleContainer.classList.add('hiding');
+        categoryContainer.classList.remove('hiding');
+        titleContainer.innerHTML = '';
+    });
    
 });
+
+
 
