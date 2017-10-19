@@ -1,5 +1,7 @@
-.hiding{
-  display:none;
+
+.arrowContainer{
+  width:30px;
+  height:30px;
 }
 dt:hover{
   text-decoration:underline;
@@ -89,12 +91,8 @@ height:250px;
 
 .expandnarrow span
 {   
-  font-size:24px;
-	line-height:32px;
-  padding-top:10px;
-  padding-bottom:10px;
-  padding-left:10px;
-  padding-right:10px;
+	line-height:24px;
+
 }
 .mobidictum{
   width:40px;
@@ -153,7 +151,7 @@ height:250px;
   box-sizing:border-box;
 }
   html,body{
- 
+
    max-width:100vw;
    font-size:16px;
    line-height:24px;
@@ -218,6 +216,29 @@ height:250px;
     
      
       }
+      #container  .rightContainer .right .contentContainerRight  .categoryContainer html
+      {
+        display : flex;
+        flex-wrap : wrap;
+        flex-direction : column;
+        
+        padding-left:30px;
+        padding-top:20px;
+        padding-top:20px;
+        margin-top:10px;;
+        background-color: #F0F0F0;
+        
+      }
+      dt {
+        font-weight:bold;
+          font-size:24px;
+          line-height:32px;
+          }
+      dd {
+       
+          font-size:16px;
+          line-height:32px;
+          }
       #container .rightContainer .right  .contentContainerTop {
       display : flex;
       flex-wrap : wrap;
@@ -249,33 +270,6 @@ height:250px;
       
       
         }
-        #container  .rightContainer .right .contentContainerRight  .categoryContainer html
-        {
-          display : flex;
-          flex-wrap : wrap;
-          flex-direction : column;
-          
-          padding-left:30px;
-          padding-top:20px;
-          padding-top:20px;
-          margin-top:10px;;
-          background-color: #F0F0F0;
-          
-        }
-        dt {
-            font-weight: bold;
-            font-size:26px;
-            line-height:32px;
-            }
-        dd {
-          
-            font-size:16px;
-            line-height:32px;
-            padding-left:30px;
-            padding-right:30px;
-            padding-top:10px;
-            padding-bottom:10px;
-            }
       #container  .rightContainer .right .contentContainerRight {
       display : flex;
       flex-wrap : wrap;
@@ -314,12 +308,12 @@ height:250px;
       padding:10px; 
       }
       #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:hover {
-        
+          -webkit-filter: grayscale(1);
                   filter: grayscale(1);
                 opacity: 1;
         }
       #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:not(:hover) {
-         
+          -webkit-filter: grayscale(1);
                   filter: grayscale(1);
                 opacity: .75;
         }
@@ -383,7 +377,7 @@ height:250px;
     ol {
       width: 100%;
       background-color: #F0F0F0;
-      list-style: square;
+  
     }
     .blogDiv ul{
       list-style:none;
@@ -468,7 +462,7 @@ and (min-device-width: 1200px)
    box-sizing:border-box;
 }
 html, body {
-   
+  
     font-family: 'Playfair Display', serif;
     font-family: 'Bitter', serif;
     font : 12px;
@@ -486,7 +480,7 @@ html, body {
     flex-wrap : wrap;
     flex-direction : column;
     justify-content: space-between;
-    align-content: space-between;
+    align-items:space-between;
   
     }
    #container .leftContainer{
@@ -640,18 +634,14 @@ html, body {
       
     }
     dt {
-        font-weight: bold;
-        font-size:26px;
+      font-weight:bold;
+        font-size:24px;
         line-height:32px;
         }
     dd {
-      
+     
         font-size:16px;
         line-height:32px;
-        padding-left:30px;
-        padding-right:30px;
-        padding-top:10px;
-        padding-bottom:10px;
         }
     #container .rightContainer .right .contentContainerRight .subContainer {
     
@@ -672,12 +662,12 @@ html, body {
     
     }
     #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:hover {
-       
+        -webkit-filter: grayscale(1);
                 filter: grayscale(1);
               opacity: 1;
       }
     #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:not(:hover) {
-  
+        -webkit-filter: grayscale(1);
                 filter: grayscale(1);
               opacity: .75;
       }
@@ -720,7 +710,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
-   
+    
   }
   ol li {
     padding: 8px;
@@ -735,7 +725,7 @@ html, body {
   ol {
     width: 100%;
     background-color: #F0F0F0;
-   
+    
   }
   .blogDiv ul{
     list-style:none;
@@ -798,7 +788,8 @@ and (max-device-width: 2400px)
 {
 
 html, body {
-
+    width : 100%;
+    height : 100%;
     font-family: 'Playfair Display', serif;
     font-family: 'Bitter', serif;
     font : 12px;
@@ -816,7 +807,7 @@ html, body {
     flex-wrap : wrap;
     flex-direction : column;
     justify-content: space-between;
-    align-content :space-between;
+    align-items:space-between;
   
     }
    #container .leftContainer{
@@ -980,12 +971,12 @@ html, body {
     
     }
     #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:hover {
-       
+        -webkit-filter: grayscale(1);
                 filter: grayscale(1);
               opacity: 1;
       }
     #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:not(:hover) {
-     
+        -webkit-filter: grayscale(1);
                 filter: grayscale(1);
               opacity: .75;
       }
@@ -1033,7 +1024,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
-  
+    list-style: square;
   }
   ol li {
     padding: 8px;
@@ -1048,7 +1039,7 @@ html, body {
   ol {
     width: 100%;
     background-color: #F0F0F0;
-  
+    list-style: square;
   }
   .blogDiv ul{
     list-style:none;
@@ -1094,14 +1085,10 @@ html, body {
 .arrowContainer{
  position:fixed;
  margin-top:30px;
-  margin-left:-70px;
+  margin-left:-90px;
  
 }
-.arrowContainer img{
-width:30px;
-height:30px;
-  
- }
+
 .firstcharacter {
   color: rgba(0, 0, 0, 0.61);
   float: left;
@@ -1113,7 +1100,7 @@ height:30px;
   padding-left: 3px;
 }
 .gap{
-  padding:10px;
+  padding:0s;
 }
 .bold{
   font-weight:bold;
