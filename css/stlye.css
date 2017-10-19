@@ -362,7 +362,7 @@ height:250px;
     ul {
       width: 100%;
       background-color: #F0F0F0;
-      list-style: square;
+      
     }
     ol li {
       padding: 8px;
@@ -1024,7 +1024,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
-    list-style: square;
+ 
   }
   ol li {
     padding: 8px;
