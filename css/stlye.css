@@ -1,3 +1,6 @@
+.hiding{
+  display:none;
+}
 dt:hover{
   text-decoration:underline;
   cursor:pointer;
@@ -150,8 +153,7 @@ height:250px;
   box-sizing:border-box;
 }
   html,body{
-   width : 100vw;
-   height:100vh;
+ 
    max-width:100vw;
    font-size:16px;
    line-height:24px;
@@ -439,8 +441,7 @@ and (min-device-width: 1200px)
    box-sizing:border-box;
 }
 html, body {
-    width : 100%;
-    height : 100%;
+   
     font-family: 'Playfair Display', serif;
     font-family: 'Bitter', serif;
     font : 12px;
@@ -770,8 +771,7 @@ and (max-device-width: 2400px)
 {
 
 html, body {
-    width : 100%;
-    height : 100%;
+
     font-family: 'Playfair Display', serif;
     font-family: 'Bitter', serif;
     font : 12px;
@@ -1067,9 +1067,14 @@ html, body {
 .arrowContainer{
  position:fixed;
  margin-top:30px;
-  margin-left:-90px;
+  margin-left:-70px;
  
 }
+.arrowContainer img{
+width:30px;
+height:30px;
+  
+ }
 .firstcharacter {
   color: rgba(0, 0, 0, 0.61);
   float: left;

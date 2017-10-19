@@ -15,7 +15,7 @@ $(function(){
         'Tool For Deployment Software' : 'Git, SVN ',
         'Projects': 'Partial telling about project with some code samples'
       };
-var obj = ['Web Dev Resources','Start working with canvas','Git Extras','Git Annex',
+var obj = ['Web Dev Resources','Start working with canvas',
 'Canvas project 2d web based game','Working swith flexbox - Basic'
 , 'Fux and Grid Design','A real world example with flexbox', 'Markdown Syntax', 
 'Type Coercion - JavaScript', 
@@ -46,7 +46,9 @@ var obj = ['Web Dev Resources','Start working with canvas','Git Extras','Git Ann
 'TexillateJS',
 'Latex - Introduction',
 'Latex - Beamer',
-'GIT -Introduction' ];
+'GIT -Introduction',
+'Git Extras','Git Annex',
+'Facebook Yoga' ];
 var template;
 var myTemplate = document.querySelector('#myTemplate');
 
