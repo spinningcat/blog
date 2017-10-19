@@ -29,39 +29,7 @@ var obj = ['Web Dev Resources','Start working with canvas','Git Extras','Git Ann
 'React Native',
 'Suggestion for newcomers to the GNU/Linux Debian operating system',
 'Linux File Permission',
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> parent of b2122a0... finally come back
-'Naming Convention',
-'Type of Language',
-'Software Design Pattern - Singeleton Pattern',
-'Software Design Pattern - Dependency Injection',
-'Software Design Pattern - MVC',
-'Software Design Pattern - MVVM',
-'First Touch to Unity',
-'Node String Package',
-'MonetJS',
-'LightBox' ];
-var template;
-var myTemplate = document.querySelector('#myTemplate');
-
-var categoryContainer = document.querySelector('.categoryContainer');
-var htmlTemplate = myTemplate.innerHTML;
-var htmlPart = document.createElement('div');
-htmlPart.setAttribute('class', 'categoryContainer');
-htmlPart.innerHTML = htmlTemplate;
-
-
-//var dt = categoryContainer.querySelector('dl');
-<<<<<<< HEAD
-=======
 'Software Design Pattern' ];
->>>>>>> parent of 66b4c53... categorization
-=======
-'Software Design Pattern' ];
-<<<<<<< HEAD
 var template;
 var myTemplate = document.querySelector('#myTemplate');
 var categoryContainer = document.querySelector('.categoryContainer');
@@ -72,11 +40,6 @@ htmlPart.innerHTML = htmlTemplate;
 
 
 //var dt = categoryContainer.querySelector('dl');
-=======
->>>>>>> parent of 66b4c53... categorization
-=======
->>>>>>> parent of b2122a0... finally come back
->>>>>>> 79332cfd468c0d4d91525e54ea0c42bbe9162163
 $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 $( ".expandnarrow" ).each(function( index, element ) {
    console.log(obj[index]);
@@ -155,11 +118,7 @@ document.onclick = function(e) {
     var classAttr;
     function appendArticlesToDiv(){
         
-<<<<<<< HEAD
         categoryContainer.style.display = 'none';
-=======
-        categoryContainer.classList.add('hiding');
->>>>>>> 79332cfd468c0d4d91525e54ea0c42bbe9162163
         titleContainer.classList.remove('hiding');
         classAttr = this.getAttribute('class');
      
@@ -173,24 +132,11 @@ document.onclick = function(e) {
         });
         $(titleContainer).find(subContainer).removeClass('hiding');
         arrowContainer.classList.remove('hiding');
-<<<<<<< HEAD
-=======
-    
->>>>>>> 79332cfd468c0d4d91525e54ea0c42bbe9162163
         
         
        
        
     }
-<<<<<<< HEAD
-=======
-    arrowContainer.addEventListener('click', function(){
-        arrowContainer.classList.add('hiding');
-        titleContainer.classList.add('hiding');
-        categoryContainer.classList.remove('hiding');
-        titleContainer.innerHTML = '';
-    });
->>>>>>> 79332cfd468c0d4d91525e54ea0c42bbe9162163
    
 });
 
