@@ -90,7 +90,7 @@ height:250px;
 	line-height:32px;
   padding-top:10px;
   padding-bottom:10px;
-  padding-left:1x0px;
+  padding-left:10px;
   padding-right:10px;
 }
 .mobidictum{
@@ -953,12 +953,12 @@ html, body {
     
     }
     #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:hover {
-        -webkit-filter: grayscale(1);
+       
                 filter: grayscale(1);
               opacity: 1;
       }
     #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:not(:hover) {
-        -webkit-filter: grayscale(1);
+     
                 filter: grayscale(1);
               opacity: .75;
       }
@@ -983,7 +983,7 @@ html, body {
    }
    #container .right .contentContainerRight .subContainer .blogDiv.visible {
         display : flex;
-        flex-wrap : wrap;
+        flex-wrap : wrap;.expan
         flex-direction : column;
         justify-content: flex-start;
         align-items:flex-start;
