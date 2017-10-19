@@ -1,5 +1,8 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b2122a0... finally come back
 .hiding{
   display:none;
 }
@@ -8,10 +11,13 @@ dt:hover{
   cursor:pointer;
 }
 
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 66b4c53... categorization
 =======
 >>>>>>> parent of 66b4c53... categorization
+=======
+>>>>>>> parent of b2122a0... finally come back
 .ui-tooltip {
   width: 200px;
   text-align: center;
@@ -287,7 +293,7 @@ height:250px;
        
        width:80vw;
       max-width:80vw;
-      padding:10px;
+      padding:10px; 
       }
       #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:hover {
           -webkit-filter: grayscale(1);
@@ -646,6 +652,9 @@ html, body {
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b2122a0... finally come back
     #container  .rightContainer .right .contentContainerRight  .categoryContainer html
     {
       display : flex;
@@ -677,10 +686,13 @@ html, body {
        
         
         }
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 66b4c53... categorization
 =======
 >>>>>>> parent of 66b4c53... categorization
+=======
+>>>>>>> parent of b2122a0... finally come back
     #container .rightContainer .right .contentContainerRight .subContainer {
     
       width:90%;
@@ -958,11 +970,11 @@ html, body {
       width:200px;
       opacity:1;
    }
-    img{
+    /*img{
       
       height:300px;
       width:500px;
-    }
+    }*/
     #container .rightContainer .right .contentContainerTop .header .textContainer {
     width : 85%;
     max-width:85%;
@@ -975,6 +987,7 @@ html, body {
     
       }
     #container  .rightContainer .right .contentContainerRight {
+     
     display : flex;
     flex-wrap : wrap;
     flex-direction : column;
@@ -1021,6 +1034,9 @@ html, body {
       box-shadow : 0 10px 3px #B0A5A5;
       cursor : pointer;
       }
+#container .right .contentContainerRight .subContainer{
+      
+} 
   
   #container .right .contentContainerRight .subContainer .blogDiv {
         display : none;
@@ -1114,6 +1130,9 @@ html, body {
     }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of b2122a0... finally come back
     .hiding{
       display:none;
     }
@@ -1123,10 +1142,13 @@ html, body {
  margin-left:-70px; 
  
 }
+<<<<<<< HEAD
 =======
 >>>>>>> parent of 66b4c53... categorization
 =======
 >>>>>>> parent of 66b4c53... categorization
+=======
+>>>>>>> parent of b2122a0... finally come back
 .firstcharacter {
   color: rgba(0, 0, 0, 0.61);
   float: left;
