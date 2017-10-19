@@ -15,6 +15,7 @@ var obj = ['Web Dev Resources','Start working with canvas','Git Extras','Git Ann
 'Suggestion for newcomers to the GNU/Linux Debian operating system',
 'Linux File Permission',
 <<<<<<< HEAD
+<<<<<<< HEAD
 'Naming Convention',
 'Type of Language',
 'Software Design Pattern - Singeleton Pattern',
@@ -36,6 +37,9 @@ htmlPart.innerHTML = htmlTemplate;
 
 
 //var dt = categoryContainer.querySelector('dl');
+=======
+'Software Design Pattern' ];
+>>>>>>> parent of 66b4c53... categorization
 =======
 'Software Design Pattern' ];
 >>>>>>> parent of 66b4c53... categorization
