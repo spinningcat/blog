@@ -47,7 +47,8 @@ var obj = ['Web Dev Resources','Start working with canvas',
 'Latex - Introduction',
 'Latex - Beamer',
 'GIT -Introduction',
-'Git Extras','Git Annex' ];
+'Git Extras','Git Annex',
+'Facebook Yoga' ];
 var template;
 var myTemplate = document.querySelector('#myTemplate');
 
