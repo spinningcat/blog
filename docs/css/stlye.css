@@ -90,7 +90,7 @@ height:250px;
 	line-height:32px;
   padding-top:10px;
   padding-bottom:10px;
-  padding-left:10px;
+  padding-left:1x0px;
   padding-right:10px;
 }
 .mobidictum{
@@ -285,12 +285,12 @@ height:250px;
       padding:10px; 
       }
       #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:hover {
-          -webkit-filter: grayscale(1);
+        
                   filter: grayscale(1);
                 opacity: 1;
         }
       #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:not(:hover) {
-          -webkit-filter: grayscale(1);
+         
                   filter: grayscale(1);
                 opacity: .75;
         }
@@ -458,7 +458,7 @@ html, body {
     flex-wrap : wrap;
     flex-direction : column;
     justify-content: space-between;
-    align-items:space-between;
+    align-content: space-between;
   
     }
    #container .leftContainer{
@@ -612,7 +612,7 @@ html, body {
       
     }
     dt {
-        font-size: bold;
+        font-weight: bold;
         font-size:26px;
         line-height:32px;
         }
@@ -644,12 +644,12 @@ html, body {
     
     }
     #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:hover {
-        -webkit-filter: grayscale(1);
+       
                 filter: grayscale(1);
               opacity: 1;
       }
     #container .rightContainer .right .contentContainerRight .subContainer .expandnarrow:not(:hover) {
-        -webkit-filter: grayscale(1);
+  
                 filter: grayscale(1);
               opacity: .75;
       }
@@ -789,7 +789,7 @@ html, body {
     flex-wrap : wrap;
     flex-direction : column;
     justify-content: space-between;
-    align-items:space-between;
+    align-content :space-between;
   
     }
    #container .leftContainer{
@@ -1081,7 +1081,7 @@ html, body {
   padding-left: 3px;
 }
 .gap{
-  padding:0s;
+  padding:10px;
 }
 .bold{
   font-weight:bold;
