@@ -983,7 +983,7 @@ html, body {
    }
    #container .right .contentContainerRight .subContainer .blogDiv.visible {
         display : flex;
-        flex-wrap : wrap;.expan
+        flex-wrap : wrap;
         flex-direction : column;
         justify-content: flex-start;
         align-items:flex-start;
