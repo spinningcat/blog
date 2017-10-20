@@ -1180,9 +1180,9 @@
                   </div>
         
                 </div>
-                <div class="subContainer hiding">
+                <div class="subContainer hiding" data="WebGeneral">
                   <ul>
-                    <li class="expandnarrow" data="WebGeneral" id="13"><span></span> </li>
+                    <li class="expandnarrow"  id="13"><span></span> </li>
                   </ul>
                   <div class="blogDiv">
         
@@ -1297,9 +1297,9 @@
                       </ul>
                   </div>
                 </div>
-                <div class="subContainer hiding">
+                <div class="subContainer hiding" data="WebGeneral">
                   <ul>
-                    <li class="expandnarrow" data="WebGeneral" id="15"><span></span> </li>
+                    <li class="expandnarrow"  id="15"><span></span> </li>
                   </ul>
                   <div class="blogDiv">
                     <p>
@@ -1315,9 +1315,9 @@
                   </div>
         
                 </div>
-                <div class="subContainer hiding">
+                <div class="subContainer hiding" data="Frontend">
                   <ul>
-                    <li class="expandnarrow" data="Frontend" id="16"><span></span> </li>
+                    <li class="expandnarrow"  id="16"><span></span> </li>
                   </ul>
                   <div class="blogDiv">
                     <p><span class="firstcharacter"> D </span>OMContentLoaded event is fired when html document is completely loaded and parsed. If you use jquery you should now $(document).red(function(){..}) is syntatic sugar of DOMContentLoaded event. </p>
@@ -2220,6 +2220,7 @@
                                   many polygons. It is because having a lot of flat surfaces is a whole lot simpler than trying to describe 
                                   an object as a continuous series of curves.
                                    </p>
+                                   <p><b class="bold">Attention:</b>The polygons don't have a fixed size. It is more about the camera and texture. If you have a low resolution texture then you don't want to zoom in or stretch it much across the screen. The nodes can be pretty much any distance from each other and describing a big box or a small box with the same number of nodes doesn't cost more on the GPU. (In this example, think of the nodes of the box as the eight corners). </p>
                                    <figure class="zoomable">
                                       <a href="./img/unity5.png" data-lightbox="image">
                                         <img src="./img/unity5.png" alt="DOM" width="650" height="450" class="big"></a>
@@ -2358,8 +2359,118 @@
                       <li class="expandnarrow" id="40"><span></span> </li>
                     </ul>
                     <div class="blogDiv">
-                    </div>
-                  </div>
+                        <p> <span class="firstcharacter">G</span>it is a tool for deployment softwares
+                          which is really popular nowadays. You can publish your projects there and have a contributor
+                          that chek, fixing bugs and develop your codes. That's kind of thing ya know. Github is the web
+                          site that host your files. Here i will show you some basic commands how to construct a bridge 
+                          between git and github with some basic commands. </p> <div class="gap"></div>
+                          <ul>
+                            <li>There is two ways to create github repository. Either you can use <b class="bold">git init</b> command or you can create
+                              github repo and clone it with command <b class="bold">git clone url/repo.git</b> </li>
+                          </ul><div class="gap"></div>
+                          <figure class="zoomable">
+                              <a href="./img/git1.png" data-lightbox="image">
+                                <img src="./img/git1.png" alt="DOM" width="750" height="50" class="big"></a>
+                            </figure><div class="gap"></div>
+                            <figure class="zoomable">
+                                <a href="./img/git2.png" data-lightbox="image">
+                                  <img src="./img/git2.png" alt="DOM" width="750" height="450" class="big"></a>
+                              </figure>
+                             
+                          <p><b class="bold">Attention:</b>Don't forget to create your repo without Readme.md file.</p>
+                    <div class="gap"></div>
+                    <ul>
+                      <li>Now we need to use <b class="bold">git clone</b> method to get git repo we create on github into our working directory.</li>
+                    </ul>
+                    <figure class="zoomable">
+                        <a href="./img/git3.png" data-lightbox="image">
+                          <img src="./img/git3.png" alt="DOM" width="750" height="2 50" class="big"></a>
+                      </figure>
+                      <div class="gap"></div>
+                      <p> There is three commands we often use these are meantioned above.</p>
+                       <ul>
+                          <li>git add * -> If you use *, you are stating to add all files. You can that command with files one by one also like git add file1 file2</li>
+                          <li>git commit -m "message" -> If you want to follow what changes you made, it is beneficial to write readable, friendly message. </li>
+                          <li>git push origin master -> Just puhs your files to master branch. </li>
+                        </ul>
+                      
+                  
+                  <figure class="zoomable">
+                      <a href="./img/git4.png" data-lightbox="image">
+                        <img src="./img/git4.png" alt="DOM" width="750" height="450" class="big"></a>
+                    </figure>
+                    <div class="gap"></div>
+                    <p><b class="bold">You can create branches as many as you want. You can later on merge those. It can be
+                      useful in big sotware developments in case of you have contributors. Let's check braching and merging real quick.</b></p>
+                  <div class="gap"></div>
+      
+
+                      <ul>
+                        <li>You can create and change your local working branch what you created with <b class="bold">git checkout -b localdevelopmentsbranch
+                          </b> The branch automatically created, whose name is <b class="bold">Origin</b>
+                        So if you want to change your branch to default one, this command <b class="bold">git checkout  origin
+                        is enough.  </b> </li>
+                        
+                      </ul><div class="gap"></div>
+                      <p><b class="bold">Attention: <b class="bold">git branch</b> or <b class="bold">git status</b> will tell you the branch you are in. There is more about <b class="bold">git status </b> that we focus on later.</b></p>
+                      <figure class="zoomable">
+                          <a href="./img/git5.png" data-lightbox="image">
+                            <img src="./img/git5.png" alt="DOM" width="750" height="450" class="big"></a>
+                        </figure> <div class="gap"> </div>
+                        <p><b class="bold">Attention:</b>Speaking of <b class="bold">git status</b> functionality, git status will show you changes in your files are ready to commit or not. </p>
+                        <figure class="zoomable">
+                            <a href="./img/git6.png" data-lightbox="image">
+                              <img src="./img/git6.png" alt="DOM" width="750" height="350" class="big"></a>
+                          </figure> <div class="gap"> </div>
+                          <p><b class="bold">Don't forget:</b>After creating a branch, you can change your branch with command <b class="bold">git checout localdevelopmentsbranch.</b>
+                            If you change something, you should push it to remove server. Thanks to that, you can work in two branches seperately.
+                            It is good especially when someone clone your repo and change something on your files. Than issuing a pull request for those changes.
+                            </p>
+                            <figure class="zoomable">
+                                <a href="./img/git8.png" data-lightbox="image">
+                                  <img src="./img/git8.png" alt="DOM" width="750" height="350" class="big"></a>
+                              </figure> <div class="gap"> </div>
+                          <ul>
+                            <li>Let's merge two local branch. This is really simple to do.</li></ul>    
+                          <div class="gap"></div>
+                          <p><b class="bold">Suggestion:</b>The thing you dont want any confliction between your local and remote.
+                          Before merging thins, i will strongly suggest you to check differences between your loca and remove. </p>
+                                <figure class="zoomable">
+                                    <a href="./img/git9.png" data-lightbox="image">
+                                      <img src="./img/git9.png" alt="DOM" width="750" height="150" class="big"></a>
+                                  </figure> <div class="gap"> </div>
+                                  <ul>
+                                    <li>Merge it now with <b class="bold">git merge localdevelopmentsbranch</b></li>
+                                  </ul>
+                                  <figure class="zoomable">
+                                      <a href="./img/git10.png" data-lightbox="image">
+                                        <img src="./img/git10.png" alt="DOM" width="750" height="350" class="big"></a>
+                                    </figure> <div class="gap"> </div>
+
+                            <ul>
+                              <li><b class="bold">Git diff</b> will show you if there is a difference in file between your local place and remote place.  </li>
+                          </ul>
+                          <figure class="zoomable">
+                              <a href="./img/git7.png" data-lightbox="image">
+                                <img src="./img/git7.png" alt="DOM" width="750" height="450" class="big"></a>
+                            </figure> <div class="gap"> </div>
+                            <p>Two more comments you should know in basic level. That are <b class="bold">git log</b> and <b class="bold">git revert hash. Let's check what these are.</b></p>
+                            <ul>
+                              <li><b class="bold">git log</b> -> git log will show you what commit, when you commit, how you revert your repo to ceratain commit and a hash. Hash
+                                is very essantial part of this log. In order to revert your repo to particular commit, hash is necessary.
+                              </li>
+                          </ul>
+                          <figure class="zoomable">
+                              <a href="./img/git12.png" data-lightbox="image">
+                                <img src="./img/git12.png" alt="DOM" width="750" height="450" class="big"></a>
+                            </figure> <div class="gap"> </div>
+                            <ul>
+                              <li><b class="bold">git revert hash</b> will revert your files to file in spesific commit. </li>
+                            </ul>
+                            <p><b class="bold">Attention:</b> If you have any error about conflict try <b class="bol">git add comment</b>
+                            what you will do <b class="bold">git revert --continue</b> in next step.</p>
+                </div>
+                </div>
                   <div class="subContainer hiding" data="ToolForDeploymentSoftware">
                     <ul>
                       <li class="expandnarrow" id="41"><span></span> </li>
@@ -2374,6 +2485,62 @@
                     <div class="blogDiv">
                     </div>
                   </div>
+                  <div class="subContainer hiding" data="BackEnd">
+                    <ul>
+                      <li class="expandnarrow" id="43"><span></span> </li>
+                    </ul>
+                    <div class="blogDiv">
+                    </div>
+                  </div>
+                  <div class="subContainer hiding" data="BackEnd">
+                    <ul>
+                      <li class="expandnarrow" id="44"><span></span> </li>
+                    </ul>
+                    <div class="blogDiv">
+                    </div>
+                  </div>
+                  <div class="subContainer hiding" data="BackEnd">
+                    <ul>
+                      <li class="expandnarrow" id="45"><span></span> </li>
+                    </ul>
+                    <div class="blogDiv">
+                    </div>
+                  </div>
+                  <div class="subContainer hiding" data="FrontEnd">
+                    <ul>
+                      <li class="expandnarrow" id="47"><span></span> </li>
+                    </ul>
+                    <div class="blogDiv">
+                    </div>
+                  </div>
+                  <div class="subContainer hiding" data="OperatingSystems">
+                    <ul>
+                      <li class="expandnarrow" id="48"><span></span> </li>
+                    </ul>
+                    <div class="blogDiv">
+                    </div>
+                  </div>
+                  <div class="subContainer hiding" data="ToolForDeploymentSoftware">
+                      <ul>
+                        <li class="expandnarrow" id="49"><span></span> </li>
+                      </ul>
+                      <div class="blogDiv">
+                      </div>
+                    </div>
+                    <div class="subContainer hiding" data="ToolForDeploymentSoftware">
+                        <ul>
+                          <li class="expandnarrow" id="50"><span></span> </li>
+                        </ul>
+                        <div class="blogDiv">
+                        </div>
+                      </div>
+                      <div class="subContainer hiding" data="ToolForDeploymentSoftware">
+                          <ul>
+                            <li class="expandnarrow" id="51"><span></span> </li>
+                          </ul>
+                          <div class="blogDiv">
+                          </div>
+                        </div>
               </div>
             </div>
         

@@ -12,7 +12,7 @@ $(function(){
         'New Tech': 'Developments that need to be discovered',
         'Mobile': 'Ionic, React Native brief mobile development',
         'Unity': 'Unity development',
-        'Tool For Deployment Software' : 'Git, SVN ',
+        'Tool For Deployment Software' : 'Git, SVN, BZR, SVN ',
         'Projects': 'Partial telling about project with some code samples'
       };
 var obj = ['Web Dev Resources','Start working with canvas',
@@ -48,7 +48,14 @@ var obj = ['Web Dev Resources','Start working with canvas',
 'Latex - Beamer',
 'GIT -Introduction',
 'Git Extras','Git Annex',
-'Facebook Yoga' ];
+'Facebook Yoga',
+'Normalization',
+'CTE - Common Table Expression',
+'DOM Parser',
+'Exa',
+'Bzr',
+'SVN',
+'Having html page on github with extension io' ];
 var template;
 var myTemplate = document.querySelector('#myTemplate');
 
@@ -64,7 +71,9 @@ htmlPart.innerHTML = htmlTemplate;
 $('pre code').each(function(i, e) {hljs.highlightBlock(e)});
 $( ".expandnarrow" ).each(function( index, element ) {
    console.log(obj[index]);
-   $(this).find('span').text( obj[index]);		
+   $(this).find('span').text( obj[index]);	
+   $(this).attr('id', index);	
+   console.log( $(this).attr('id'));
 });
 $('.expandnarrow').on('click', function(){
     $(this).closest('.subContainer').find('.blogDiv').toggleClass('visible');
