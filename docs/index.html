@@ -2030,13 +2030,13 @@
                         </ol>
                       </li>
                       <li>Try backports: Software is released under debian after long tests and bugfixes. Package can be old because of that. You can install more up to date packages with
-                        <b class="bold">-t stretch-backports</b> options.
+                        <b class="bold"><code>-t stretch-backports</code></b> options.</li>
                         <ol>
                           <li><a href="https://backports.debian.org/news/stretch-backports/" target="_blank"><b class="bold">Stretch backports</b></a></li>
                         </ol>
                       </li>
                       <li><b class="bold">Configuring, installing packages manually is easy but:</b>You can install packages from source with configure, make, make install. But it will be hard to remove later on. You cannot do with APT or synaptic. Better to sEvery
-                        Debian package installed on your system has a directory in /usr/share/doc tick with debian in that case.</li>
+                        Debian package installed on your system has a directory in <code>/usr/share/doc</code> contains documentaries.</li>
                       <li>
                         Read those.
                         <ol>
@@ -2476,7 +2476,39 @@
                       <li class="expandnarrow" id="41"><span></span> </li>
                     </ul>
                     <div class="blogDiv">
+                        <p> <span class="firstcharacter">G</span>it extras contain plenty of commands
+                        you can consider as a helper. I am debian buster user. So in debian repo. there is <b class="bold">git-extras package.</b>
+                      You can install that with <b class="bold">aptitude install git-extras</b> command.</p><div class="gap"></div>
+                    <ul>
+                      <li><b class="bold">Git alias:</b> -> you can construct alias for using later. Such as <b class="bold">git alias gst="git status"</b></li>
+                      <li>type gst in command line.</li>
+                    </ul><div class="gap"></div>
+                    <p><b class="bold">Tip:</b> If you want all defined aliases type <b class="bold">git alias</b>in command line </p> 
+                    <div class="gap"></div>
+                    <ul>
+                      <li>There is a .gitignore file in your repo. This file just tells to git dont worry about that file. You can safely ignore that.</li>
+                      <li>Think about you have pdf file in your directory. You can just type git ignore ".pdf". Git goesnt care about odf file anymore.</li>
+                    </ul><div class="gap"></div>
+                    <ul>
+                      <li><b class="bold">Git info:</b> is for showing some information about repo.</li>
+                    </ul><div class="gap"></div>
+                    <ul>
+                      <li><b class="bold">Git create-branch:</b> It is for creating new branch  </li>
+                    </ul><div class="gap"></div>
+                    <ul>
+                      <li><b class="bold">Git delete-branch:</b> It is for removing existing branch.</li>
+                    </ul><div class="gap"></div>
+                    <ul>
+                        <li><b class="bold">Git authors:</b> It shows you who is own of this repo.</li>
+                      </ul><div class="gap"></div>
+                      <ul>
+                          <li><b class="bold">Git back:</b>With that command, you can remove latest commit. You can remove any amount of comments with a number
+                          <div class="bold">git back 3 -< will remove 3 last commit. It can be handy. If you really remember what you did. Or you can resolve conflicts easily. </div></li>
+                        </ul><div class="gap"></div>
                     </div>
+                    <ul>
+                        <li><b class="bold">Git undo:</b> It is same with git back.</li>
+                      </ul><div class="gap"></div>
                   </div>
                   <div class="subContainer hiding" data="ToolForDeploymentSoftware">
                     <ul>

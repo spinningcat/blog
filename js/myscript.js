@@ -12,7 +12,7 @@ $(function(){
         'New Tech': 'Developments that need to be discovered',
         'Mobile': 'Ionic, React Native brief mobile development',
         'Unity': 'Unity development',
-        'Tool For Deployment Software' : 'Git, SVN, BZR, SVN ',
+        'Tool For Deployment Software' : 'Git, SVN, BZR ',
         'Projects': 'Partial telling about project with some code samples'
       };
 var obj = ['Web Dev Resources','Start working with canvas',
