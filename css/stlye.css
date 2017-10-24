@@ -62,7 +62,7 @@ dt:hover{
 }
 
 .node{
-  
+
 height:150px;
 }
 .node2{
@@ -357,6 +357,15 @@ height:250px;
           max-width:95vw;
           
     }
+
+.node{
+  
+height:250px;
+}
+.node2{
+
+height:350px;
+}
     ul li {
       margin:0;
       padding:0;
