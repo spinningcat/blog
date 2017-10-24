@@ -212,7 +212,14 @@ height:250px;
       
     }
   
- 
+    .node{
+      width:200px;
+      height:50px;  
+      }
+      .node2{
+      width:200px;
+      height:50px;
+      }
     #container  .rightContainer .right {
       display : flex;
       flex-wrap : wrap;
@@ -358,14 +365,7 @@ height:250px;
           
     }
 
-.node{
-width:200px;
-height:50px;
-}
-.node2{
-width:200px;
-height:50px;
-}
+
     ul li {
       margin:0;
       padding:0;
