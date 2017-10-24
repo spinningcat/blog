@@ -214,11 +214,11 @@ height:250px;
   
     .node{
       width:200px;
-      height:50px;  
+      height:150px;  
       }
       .node2{
       width:200px;
-      height:50px;
+      height:150px;
       }
     #container  .rightContainer .right {
       display : flex;
