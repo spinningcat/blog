@@ -62,11 +62,11 @@ dt:hover{
 }
 
 .node{
-width:550px;
+
 height:150px;
 }
 .node2{
-width:550px;
+
 height:250px;
 }
 
@@ -237,10 +237,7 @@ height:250px;
         background-color: #F0F0F0;
         
       }
-      img{
-        width:30px;
-        height:30px;
-      }
+  
       dt {
         font-weight:bold;
           font-size:24px;
