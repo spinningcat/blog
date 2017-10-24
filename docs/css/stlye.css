@@ -6,6 +6,10 @@
   width:30px;
   height:30px;
 }
+.arrowContainer img{
+  width:30px;
+  height:30px;
+}
 dt:hover{
   text-decoration:underline;
   cursor:pointer;
