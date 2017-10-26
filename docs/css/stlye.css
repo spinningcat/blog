@@ -6,10 +6,7 @@
   width:30px;
   height:30px;
 }
-.arrowContainer img{
-  width:30px;
-  height:30px;
-}
+
 dt:hover{
   text-decoration:underline;
   cursor:pointer;
@@ -65,11 +62,11 @@ dt:hover{
 }
 
 .node{
-width:550px;
+
 height:150px;
 }
 .node2{
-width:550px;
+
 height:250px;
 }
 
@@ -193,6 +190,10 @@ height:250px;
  
     
     }
+    .arrowContainer img{
+      width:30px;
+      height:30px;
+    } 
     #container .leftContainer .left .fa{
    
       font-size:20px;
@@ -211,7 +212,14 @@ height:250px;
       
     }
   
- 
+    .node{
+      width:200px;
+      height:150px;  
+      }
+      .node2{
+      width:200px;
+      height:150px;
+      }
     #container  .rightContainer .right {
       display : flex;
       flex-wrap : wrap;
@@ -236,6 +244,7 @@ height:250px;
         background-color: #F0F0F0;
         
       }
+  
       dt {
         font-weight:bold;
           font-size:24px;
@@ -355,6 +364,8 @@ height:250px;
           max-width:95vw;
           
     }
+
+
     ul li {
       margin:0;
       padding:0;
