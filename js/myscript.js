@@ -12,7 +12,7 @@ $(function(){
         'New Tech': 'Developments that need to be discovered',
         'Mobile': 'Ionic, React Native brief mobile development',
         'Unity': 'Unity development',
-        'Tool For Deployment Software' : 'Git, SVN, BZR ',
+        'Tool For Deployment Software' : 'VCS ',
         'Projects': 'Partial telling about project with some code samples'
       };
 var obj = ['Web Dev Resources','Start working with canvas',
@@ -53,9 +53,9 @@ var obj = ['Web Dev Resources','Start working with canvas',
 'CTE - Common Table Expression',
 'DOM Parser',
 'Exa',
-'Bzr',
-'SVN',
-'Having html page on github with extension io' ];
+'Having html page on github with extension io',
+'Unity - Simple Application'
+ ];
 var template;
 var myTemplate = document.querySelector('#myTemplate');
 
