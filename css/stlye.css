@@ -249,13 +249,13 @@ height:250px;
         font-weight:bold;
           font-size:24px;
           line-height:32px;
-          text-align:center;
+         
           }
       dd {
        
           font-size:16px;
           line-height:32px;
-          text-align:center;
+       
           }
       #container .rightContainer .right  .contentContainerTop {
       display : flex;
@@ -970,7 +970,7 @@ html, body {
   
     width:70%;
     max-width:70%;
-    margin-left:17%;
+    margin-left:20%;
    
   
     }
