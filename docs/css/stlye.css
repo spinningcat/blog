@@ -732,6 +732,7 @@ html, body {
   ul {
     width: 100%;
     background-color: #F0F0F0;
+    position: sticky; top: 0
     
   }
   ol li {
